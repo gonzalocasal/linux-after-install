@@ -1,0 +1,78 @@
+[Desktop Entry]
+Name=Rhythmbox
+GenericName=Music Player
+X-GNOME-FullName=Rhythmbox Music Player
+Comment=Play and organize your music collection
+Keywords=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;
+Keywords[ar]=صوت;صوتيات;اغاني;أغاني;ام بي ثري;إم بي ثري;قرص;قرص مرن;بث صوتي;نشرة صوتية;نشرات صوتية;ايبود;أيبود;قائمة تشغيل;راديو;
+Keywords[bs]=Zvuk;Pjesma;MP3;CD;Podemisija;MTP;iPod;Spisak pjesama;Last.fm;UPnP;DLNA;Radio;
+Keywords[ca]=Audio;Cançó;MP3;CD;Podcast;MTP;iPod;Llista de reproducció;Last.fm;UPnP;DLNA;Ràdio;
+Keywords[cs]=audio;zvuk;skladba;hudba;písnička;MP3;CD;podcast;MTP;přenosný přehrávač;iPod;seznam skladeb;Last.fm;UPnP;DLNA;rádio;
+Keywords[da]=Lyd;Audio;Sang;Musik;MP3;cd;Podcast;MTP;iPod;Afspilningsliste;Spilleliste;Playlist;Last.fm;UPnP;DLNA;Radio;
+Keywords[de]=Audio;Musik;Lied;MP3;CD;Podcast;MTP;iPod;Wiedergabeliste;Last.fm;UPnP;DLNA;Radio;
+Keywords[el]=Ήχος;Τραγούδι;MP3;Φορητή εκπομπή(Podcast);iPod;Λίστα αναπαραγωγής;Ράδιο;Audio;Song;CD;Podcast;MTP;Playlist;Last.fm;UPnP;DLNA;Radio;
+Keywords[es]=Sonido;Canción;MP3;CD;Podcast;MTP;iPod;Lista de reproducción;Last.fm;UPnP;DLNA;Radio;
+Keywords[fi]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;ääni;kappale;raita;biisi;soittolista;
+Keywords[fr]=Audio;chanson;musique;MP3;CD;Podcast;MTP;iPod;liste de lecture;Last.fm;UPnP;DLNA;radio;
+Keywords[gd]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;fuaime;òran;òrain;pod-chraoladh;rèidio;
+Keywords[gl]=Son;Canción;MP3;CD;Podcast;MTP;iPod;Lista de reprodución;Last.fm;UPnP;DLNA;Radio;
+Keywords[hr]=Zvuk;Pjesma;MP3;CD;Podcast;MTP;iPod;Popis izvođenja;Last.fm;UPnP;DLNA;Radio;
+Keywords[hu]=Hang;Zene;Dal;Szám;MP3;CD;Podcast;MTP;iPod;Lejátszólista;Last.fm;UPnP;DLNA;Rádió;
+Keywords[id]=Audio;Lagu;MP3;CD;Podcast;MTP;iPod;Daftar putar;Last.fm;UPnP;DLNA;Radio;
+Keywords[it]=Audio;Suono;Musica;Canzone;Canzoni;MP3;CD;Podcast;MTP;iPod;Playlist;last.fm;UPnP;DLNA;Radio;
+Keywords[ja]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;オーディオ;音声;楽曲;音楽;ミュージック;歌;ソング;ポッドキャスト;プレイリスト;ユニバーサルプラグアンドプレイ;ラジオ;musicplayer;
+Keywords[ko]=Audio;오디오;Song;노래;MP3;CD;Podcast;팟캐스트;MTP;iPod;아이팟;Playlist;재생목록;Last.fm;UPnP;DLNA;Radio;라디오;
+Keywords[lt]=Garsas;Daina;MP3;CD;Tinklalaidė;MTP;iPod;Grojaraštis;Last.fm;UpnP;DLNA;Radijas;
+Keywords[lv]=Audio;Dziesma;MP3;CD;Podraide;MTP;iPod;Repertuārs;Last.fm;UPnP;DLNA;Radio;
+Keywords[nb]=Lyd;Sang;MP3;CD;Podcast;MTP;iPod;Spilleliste;Last.fm;UPnP;DLNA;Radio;
+Keywords[nl]=audio;liedje;muziek;mp3;podcast;ipod;afspeellijst;radio;last.fm;cd;upnp;dlna;mtp;
+Keywords[oc]=Àudio;cançon;musica;MP3;CD;Podcast;MTP;iPod;lista de lectura;Last.fm;UPnP;DLNA;ràdio;
+Keywords[pl]=Dźwięk;Audio;Piosenka;Utwór;MP3;Ogg;Vorbis;FLAC;CD;Płyta;Podcast;Podkasty;MTP;iPod;Playlista;Lista;odtwarzania;M3U;PLS;XSPF;Last.fm;Libre.fm;Lastfm;Librefm;Magnatune;SoundCloud;UPnP;DLNA;DAAP;MPRIS;LIRC;ReplayGain;Radio;
+Keywords[pt]=Áudio;Canção;MP3;CD;Podcast;MTP;iPod;Lista de reprodução;Last.fm;UPnP;DLNA;Rádio;
+Keywords[pt_BR]=Áudio;Som;MP3;CD;Podcast;MTP;iPod;Lista de reprodução;Playlist;Last.fm;UPnP;DLNA;Rádio;
+Keywords[ro]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;Piesă;Listă;
+Keywords[ru]=Аудио;Звук;Песня;Композиция;MP3;CD;Подкаст;MTP;iPod;Плейлист;Список;Last.fm;UPnP;DLNA;Радио;
+Keywords[si]=ශ්‍රව්‍ය;ගීත;එම්පීත්‍රී;සීඩී;පොඩ්කාස්ට්;MTP;අයිපොඩ්; ගීතලැයිස්තුව;Last.fm;UPnP;DLNA;රේඩියෝ;
+Keywords[sk]=Audio;Pieseň;MP3;CD;Podcast;MTP;iPod;Zoznam piesní;Last.fm;UPnP;DLNA;Rádio;Hudba;Pesničky;Skladby;
+Keywords[sl]=zvok;skladbe;pesmi;glasba;MP3;CD;podcast;MTP;iPod;seznam predvajanja;Last.fm;UPnP;DLNA;radio;
+Keywords[sr]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;pesma;zvuk;podkast;spisak numera;ajPod;песма;звук;МП3;ЦД;подкаст;МТП;ајПод;списак нумера;Ласт.фм;УПнП;ДЛНА;радио;
+Keywords[sr@latin]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;pesma;zvuk;podkast;spisak numera;ajPod;pesma;zvuk;MP3;CD;podkast;MTP;ajPod;spisak numera;Last.fm;UPnP;DLNA;radio;
+Keywords[sv]=Ljud;Låt;MP3;CD;Podcast;MTP;iPod;Spellista;Last.fm;UPnP;DLNA;Radio;
+Keywords[th]=แฟ้มเสียง;เพลง;MP3;ซีดี;พอดแคสต์;MTP;ไอพอด;คิวเพลง;Last.fm;UPnP;DLNA;วิทยุ;
+Keywords[tr]=Ses;Şarkı;Parça;MP3;CD;Podcast;MTP;iPod;Çalma Listesi;Last.fm;UPnP;DLNA;Radyo;
+Keywords[vi]=Audio;âm;am;thanh;nhạc;nhac;Song;Hát;hat;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;Đài;dai;
+Keywords[zh_CN]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音频;音乐;歌曲;光盘;播客;播放列表;电台;
+Keywords[zh_HK]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音訊;音樂;歌曲;歌;播客;唱片;播放清單;電臺;電台;廣播;
+Keywords[zh_TW]=Audio;Song;MP3;CD;Podcast;MTP;iPod;Playlist;Last.fm;UPnP;DLNA;Radio;音訊;音樂;歌曲;歌;播客;唱片;播放清單;電臺;電台;廣播;
+Exec=rhythmbox %U
+Terminal=false
+Type=Application
+Icon=/home/gonzalo/Imágenes/Iconos/musica2.png
+X-GNOME-DocPath=rhythmbox/rhythmbox.xml
+Categories=GNOME;GTK;AudioVideo;Audio;Player;
+MimeType=application/x-ogg;application/ogg;audio/x-vorbis+ogg;audio/vorbis;audio/x-vorbis;audio/x-scpls;audio/x-mp3;audio/x-mpeg;audio/mpeg;audio/x-mpegurl;audio/x-flac;audio/mp4;audio/x-it;audio/x-mod;audio/x-s3m;audio/x-stm;audio/x-xm;x-scheme-handler/itms;x-scheme-handler/itmss;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=rhythmbox
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=rhythmbox-client;rhythmbox-metadata;
+X-GNOME-Bugzilla-Version=3.4.2
+X-GNOME-UsesNotifications=true
+Actions=PlayPause;Next;Previous;StopQuit;
+X-Ubuntu-Gettext-Domain=rhythmbox
+
+[Desktop Action PlayPause]
+Name=Play/Pause
+Exec=rhythmbox-client --play-pause
+
+[Desktop Action Next]
+Name=Next
+Exec=rhythmbox-client --next
+
+[Desktop Action Previous]
+Name=Previous
+Exec=rhythmbox-client --previous
+
+[Desktop Action StopQuit]
+Name=Stop & Quit
+Exec=rhythmbox-client --quit
