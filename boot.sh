@@ -39,6 +39,11 @@ sudo apt-get install -y -f
 sudo rm google-chrome*.deb
 sleep 10
 
+# FIREFOX
+sudo apt-get update
+sudo apt-get install -y firefox
+sleep 10
+
 # BITTORRENT
 sudo apt install -y transmission
 sleep 10
