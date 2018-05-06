@@ -8,6 +8,9 @@ sudo dpkg -i Files/Theme/arc.deb
 sudo apt install -f -y
 sleep 10
 
+# NVIDIA DRIVERS
+sudo apt install -y nvidia-375 nvidia-prime
+sleep 10
 
 #ECLIPSE SETTINGS
 cp -rf Files/Eclipse/eclipse.ini /home/gonzalo/Programas/eclipse/
