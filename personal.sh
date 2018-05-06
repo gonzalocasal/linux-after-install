@@ -10,7 +10,7 @@ sleep 10
 
 
 #ECLIPSE SETTINGS
-sudo yes | sudo cp -rf Files/Eclipse/eclipse.ini /home/gonzalo/Programas/eclipse/
+cp -rf Files/Eclipse/eclipse.ini /home/gonzalo/Programas/eclipse/
 
 
 # CLEANUP FLATPAK .DESKTOPS FILES
