@@ -165,6 +165,10 @@ sudo apt update
 sudo apt install -y steam
 sleep 10
 
+#VIRTUAL BOX
+sudo apt install -y virtualbox virtualbox-ext-pack
+sleep 10
+
 # CLEANUP
 sudo apt remove -y noise
 sudo apt-get -y autoremove
