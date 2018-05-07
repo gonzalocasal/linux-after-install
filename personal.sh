@@ -9,7 +9,7 @@ sudo apt install -f -y
 sleep 10
 
 # NVIDIA DRIVERS
-sudo apt install -y nvidia-375 nvidia-prime
+sudo apt install -y nvidia-367 nvidia-prime
 sleep 10
 
 #ECLIPSE SETTINGS
