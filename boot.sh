@@ -6,10 +6,6 @@ sleep 10
 sudo apt-get install -y software-properties-common python-software-properties
 sleep 10
 
-#BLUEMAN
-sudo apt-get install -y blueman
-sleep 10
-
 # FLATPACK APPS
 sudo add-apt-repository --yes ppa:alexlarsson/flatpak
 sudo apt update
