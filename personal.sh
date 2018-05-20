@@ -59,7 +59,6 @@ sleep 10
 
 
 # CLEANUP FLATPAK .DESKTOPS FILES
-sudo rm /var/lib/flatpak/app/org.libreoffice.LibreOffice/current/active/export/share/applications/*
 sudo rm /var/lib/flatpak/app/com.github.bitseater.weather/current/active/export/share/applications/*
 sudo rm /var/lib/flatpak/app/com.github.wwmm.pulseeffects/current/active/export/share/applications/*
 

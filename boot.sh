@@ -21,9 +21,6 @@ flatpak install flathub com.spotify.Client -y
 # VLC
 flatpak install flathub org.videolan.VLC -y
 
-# LIBRE OFFICE
-flatpak install flathub org.libreoffice.LibreOffice -y
-
 # WEATHER APP
 flatpak install flathub com.github.bitseater.weather -y
 
@@ -31,6 +28,15 @@ flatpak install flathub com.github.bitseater.weather -y
 flatpak install flathub com.github.wwmm.pulseeffects -y
 
 sleep 10
+
+# LIBRE OFFICE
+sudo add-apt-repository ppa:libreoffice/ppa --yes
+sudo apt update
+sudo apt install libreoffice -y
+sudo apt install libreoffice-l10n-es -y
+sudo apt install libreoffice-style-sifr -y
+sleep 10
+
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
