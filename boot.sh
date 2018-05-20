@@ -54,6 +54,10 @@ sleep 10
 sudo apt install -y transmission
 sleep 10
 
+# UNRAR
+sudo apt install -y unrar
+sleep 10
+
 # ELEMENTARY PLUS
 sudo apt-get install -y software-properties-common
 sudo add-apt-repository --yes ppa:philip.scott/elementary-tweaks
