@@ -15,9 +15,6 @@ flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
 # SKYPE
 flatpak install flathub com.skype.Client -y
 
-# SPOTIFY
-flatpak install flathub com.spotify.Client -y
-
 # VLC
 flatpak install flathub org.videolan.VLC -y
 
@@ -37,6 +34,13 @@ sudo apt install libreoffice-l10n-es -y
 sudo apt install libreoffice-style-sifr -y
 sleep 10
 
+
+# SPOTIFY
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt install spotify-client -y
+sleep 10
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -138,10 +142,9 @@ sleep 10
 # APACHE PHP
 sudo apt-get install -y apache2
 sudo apt-get install -y php libapache2-mod-php php-mysql php-curl php-gd php-pear php-imagick php-imap php-mcrypt php-recode php-tidy php-xmlrpc
-sudo yes | sudo cp -rf Files/Apache/000-default.conf /etc/apache2/sites-available/
-sudo yes | sudo cp -rf Files/Apache/apache2.conf /etc/apache2/
 sudo a2enmod rewrite
 sudo service apache2 restart
+
 sleep 10
 
 # SQLECTRON

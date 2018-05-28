@@ -57,6 +57,9 @@ sleep 10
 sudo apt install -y nvidia-384 nvidia-prime
 sleep 10
 
+# COLGADO
+sudo yes | sudo cp -rf Files/Apache/000-default.conf /etc/apache2/sites-available/ && sudo yes | sudo cp -rf Files/Apache/apache2.conf /etc/apache2/
+
 
 # CLEANUP FLATPAK .DESKTOPS FILES
 sudo rm /var/lib/flatpak/app/com.github.bitseater.weather/current/active/export/share/applications/*
