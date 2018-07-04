@@ -126,7 +126,7 @@ sudo apt install -y audacity
 sleep 5
 
 # MEGASYNC
-wget https://mega.nz/linux/MEGAsync/xUbuntu_16.04/amd64/megasync-xUbuntu_16.04_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
 sudo dpkg -i ./megasync*.deb
 sudo apt install -y -f
 sudo rm megasync*.deb
