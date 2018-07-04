@@ -2,37 +2,46 @@
 #    PERSONAL SETTINGS    #
 ###########################
 
-
-# SUDO WARNING
-gsettings set org.pantheon.terminal.settings unsafe-paste-alert false
-
-# NAUTILUS SETTINGS
+echo "################################################################"
+echo "###################    NAUTILUS SETTINGS  ######################"
+echo "################################################################"
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gtk.Settings.FileChooser show-hidden false 
 
-# ICONS
+echo "################################################################"
+echo "###################    ICONS   ######################"
+echo "################################################################"
+mkdir ~/.local/share/icons/Paper/
 cp -R Files/Paper/ ~/.local/share/icons/Paper/
 
-# WALLPAPERS
+echo "################################################################"
+echo "###################    WALLPAPERS   ######################"
+echo "################################################################"
 cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
 
-# APPS
+echo "################################################################"
+echo "###################    DESKTOPS FILES   ######################"
+echo "################################################################"
 cp -a Files/Desktops/. ~/.local/share/applications/
 
-# REPOS
+echo "################################################################"
+echo "###################    REPOS   ######################"
+echo "################################################################"
 mkdir ~/Repos
 cd ~/Repos
 git clone https://github.com/gonzalocasal/colgado.tv.git
 
-# HOME FOLDER
+echo "################################################################"
+echo "###################    HOME FOLDER   ######################"
+echo "################################################################"
 echo 'XDG_DESKTOP_DIR="$HOME/.config/desktop"' >> ~/.config/user-dirs.dirs
 echo 'enabled=False' >> ~/.config/user-dirs.dirs
 
-# HIDDE SNAP FOLDER
-touch ~/.hidden
-echo 'snap' >> ~/.hidden
 
-# NATURAL SCROLLING DISABLE
+
+echo "################################################################"
+echo "###################    NATURAL SCROLL DISABLE   ######################"
+echo "################################################################"
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 
 
@@ -41,7 +50,9 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 ###########################
 
 
-# THEME
+echo "################################################################"
+echo "###################    ARC THEME   ######################"
+echo "################################################################"
 rm -rf /tmp/arc-theme
 sudo apt-get install build-essential autoconf automake pkg-config libgtk-3.0 libgtk-3-dev -y
 git clone https://github.com/horst3180/arc-theme --depth 1 /tmp/arc-theme
@@ -50,13 +61,17 @@ sh autogen.sh --prefix=/usr
 sudo make install
 rm -rf /tmp/arc-theme
 sudo rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
-
 sudo apt install arc-theme -y
 sleep 10
 
-# NVIDIA DRIVERS
+
+echo "################################################################"
+echo "###################    NVIDIA DRIVERS   ######################"
+echo "################################################################"
 sudo apt install -y nvidia-384 nvidia-prime
 sleep 10
 
-# HIDE MEGASYNC IN WINGPANEL
+echo "################################################################"
+echo "###################    HIDE MEGASYNC IN WINGPANEL   ######################"
+echo "################################################################"
 sudo sh -c "echo 'megasync' >> /etc/wingpanel.d/ayatana.blacklist"
