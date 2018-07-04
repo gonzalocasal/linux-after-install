@@ -2,8 +2,6 @@
 #    PERSONAL SETTINGS    #
 ###########################
 
-#ECLIPSE SETTINGS
-cp -rf Files/Eclipse/eclipse.ini /home/gonzalo/Programas/eclipse/
 
 # SUDO WARNING
 gsettings set org.pantheon.terminal.settings unsafe-paste-alert false
@@ -13,7 +11,6 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gtk.Settings.FileChooser show-hidden false 
 
 # ICONS
-mkdir ~/.local/share/icons
 cp -R Files/Paper/ ~/.local/share/icons/Paper/
 
 # WALLPAPERS
@@ -45,8 +42,16 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 
 
 # THEME
-sudo dpkg -i Files/Theme/arc.deb
-sudo apt install -f -y
+rm -rf /tmp/arc-theme
+sudo apt-get install build-essential autoconf automake pkg-config libgtk-3.0 libgtk-3-dev -y
+git clone https://github.com/horst3180/arc-theme --depth 1 /tmp/arc-theme
+cd /tmp/arc-theme
+sh autogen.sh --prefix=/usr
+sudo make install
+rm -rf /tmp/arc-theme
+sudo rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
+
+sudo apt install arc-theme -y
 sleep 10
 
 # NVIDIA DRIVERS
