@@ -1,0 +1,23 @@
+[Desktop Entry]
+Type=Application
+Name[en_AU]=Camera
+Name[en_CA]=Camera
+Name[en_GB]=Camera
+Name=Camera
+Comment[en_AU]=Take photos and videos with the camera
+Comment[en_CA]=Take photos and videos with the camera
+Comment[en_GB]=Take photos and videos with the camera
+Comment=Take photos and videos with the camera
+GenericName[en_AU]=Photo Booth
+GenericName[en_CA]=Photo Booth
+GenericName[en_GB]=Photo Booth
+GenericName=Photo Booth
+Exec=io.elementary.camera
+Icon=/home/gonzalo/Imágenes/Iconos/google_duo.png
+Terminal=false
+Categories=GNOME;AudioVideo;
+Keywords[en_AU]=Photo;Video;Webcam;Camera;Booth;
+Keywords[en_CA]=Photo;Video;Webcam;Camera;Booth;
+Keywords[en_GB]=Photo;Video;Webcam;Camera;Booth;
+Keywords=Photo;Video;Webcam;Camera;Booth;
+StartupNotify=true
