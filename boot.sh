@@ -220,9 +220,12 @@ sleep 10
 echo "################################################################"
 echo "###################    JAVA   ######################"
 echo "################################################################"
-sudo add-apt-repository --yes ppa:webupd8team/java
-sudo apt update
-sudo apt install -y oracle-java8-installer
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz"
+sudo mkdir /opt/jdk
+sudo tar -zxf jdk-8u171-linux-x64.tar.gz -C /opt/jdk
+sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_171/bin/java 100
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_171/bin/javac 100
+sudo echo "export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
 sleep 10
 
 echo "################################################################"
@@ -257,4 +260,5 @@ sudo apt clean
 sleep 10
 sudo apt-get purge pantheon-photos pantheon-photos-common
 sudo apt remove audience
+sudo apt remove epiphany-browser 
 sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbus-bus.disabled
