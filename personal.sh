@@ -29,6 +29,8 @@ echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
 cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
+echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/'" >> ~/.bashrc
+source ~/.bashrc
 
 echo "################################################################"
 echo "###################    DESKTOPS FILES   ######################"
@@ -36,11 +38,11 @@ echo "################################################################"
 cp -a Files/Desktops/. ~/.local/share/applications/
 
 echo "################################################################"
-echo "###################    REPOS   ######################"
+echo "###################    VIDEO PRIME ALIAS   ######################"
 echo "################################################################"
-mkdir ~/Repos
-cd ~/Repos
-git clone https://github.com/gonzalocasal/colgado.tv.git
+echo "alias intel='sudo -S <<< "PASS" prime-select intel'" >> ~/.bashrc
+echo "alias nvidia='sudo -S <<< "PASS" prime-select nvidia'" >> ~/.bashrc
+source ~/.bashrc
 
 echo "################################################################"
 echo "###################    HOME FOLDER   ######################"
