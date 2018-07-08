@@ -29,7 +29,7 @@ echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
 cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
-echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/'" >> ~/.bashrc
+echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/; find ~/.local/share/backgrounds/ -type f -exec chmod 644 {} \;'" >> ~/.bashrc
 source ~/.bashrc
 
 echo "################################################################"
@@ -40,8 +40,9 @@ cp -a Files/Desktops/. ~/.local/share/applications/
 echo "################################################################"
 echo "###################    VIDEO PRIME ALIAS   ######################"
 echo "################################################################"
-echo "alias intel='sudo -S <<< "PASS" prime-select intel'" >> ~/.bashrc
-echo "alias nvidia='sudo -S <<< "PASS" prime-select nvidia'" >> ~/.bashrc
+echo "alias intel='sudo -S <<< "PASS" prime-select intel && reboot'" >> ~/.bashrc
+echo "alias nvidia='sudo -S <<< "PASS" prime-select nvidia && reboot'" >> ~/.bashrc
+echo "alias query='prime-select query'" >> ~/.bashrc
 source ~/.bashrc
 
 echo "################################################################"
@@ -54,3 +55,5 @@ echo "################################################################"
 echo "###################    NATURAL SCROLL DISABLE   ######################"
 echo "################################################################"
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
+
+

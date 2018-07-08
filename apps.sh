@@ -119,6 +119,14 @@ sudo apt install -y nomacs
 sleep 10
 
 echo "################################################################"
+echo "###################    STEAM   ######################"
+echo "################################################################"
+sudo add-apt-repository --yes multiverse
+sudo apt update 
+sudo apt install -y steam
+sleep 10
+
+echo "################################################################"
 echo "###################    NAUTILUS   ######################"
 echo "################################################################"
 sudo apt install -y nautilus
@@ -235,14 +243,6 @@ sudo add-apt-repository --yes ppa:ubuntu-desktop/ubuntu-make
 sudo apt update
 sudo apt install -y ubuntu-make
 umake ide eclipse-jee
-sleep 10
-
-echo "################################################################"
-echo "###################    STEAM   ######################"
-echo "################################################################"
-sudo add-apt-repository --yes multiverse
-sudo apt update 
-sudo apt install -y steam
 sleep 10
 
 echo "################################################################"
