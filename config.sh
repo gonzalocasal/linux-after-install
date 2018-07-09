@@ -18,7 +18,9 @@ echo "################################################################"
 echo "###################    ICONS   ######################"
 echo "################################################################"
 mkdir ~/.local/share/icons/Paper/
-cp -R Files/Paper/ ~/.local/share/icons/Paper/
+mkdir ~/.local/share/icons/Paper2/
+cp -R Files/Icons/Paper/ ~/.local/share/icons/Paper/
+cp -R Files/Icons/Paper2/ ~/.local/share/icons/Paper2/
 
 echo "################################################################"
 echo "###################    THEME   ######################"

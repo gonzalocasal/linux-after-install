@@ -11,21 +11,6 @@ sudo apt install -y software-properties-common python-software-properties
 sleep 10
 
 echo "################################################################"
-echo "###################    FLATPAK   ######################"
-echo "################################################################"
-sudo add-apt-repository --yes ppa:alexlarsson/flatpak
-sudo apt update
-sudo apt install -y flatpak
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-
-
-echo "################################################################"
-echo "###################    PULSE EFFECT   ######################"
-echo "################################################################"
-flatpak install flathub com.github.wwmm.pulseeffects -y
-sleep 10
-
-echo "################################################################"
 echo "###################    VLC   ######################"
 echo "################################################################"
 sudo apt update
