@@ -11,16 +11,13 @@ gsettings set org.gtk.Settings.FileChooser show-hidden false
 echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
-gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7
-gsettings set io.elementary.desktop.wingpanel.applications-menu rows 5
+gsettings set io.elementary.desktop.wingpanel.applications-menu columns 6 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 5
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
 echo "################################################################"
-mkdir ~/.local/share/icons/Paper/
-mkdir ~/.local/share/icons/Paper2/
-cp -R Files/Icons/Paper/ ~/.local/share/icons/Paper/
-cp -R Files/Icons/Paper2/ ~/.local/share/icons/Paper2/
+mkdir ~/.local/share/icons/ && cp -R Files/Icons/. ~/.local/share/icons
+
 
 echo "################################################################"
 echo "###################    THEME   ######################"

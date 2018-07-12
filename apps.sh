@@ -218,7 +218,7 @@ sudo mkdir /opt/jdk
 sudo tar -zxf jdk-8u171-linux-x64.tar.gz -C /opt/jdk
 sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_171/bin/java 100
 sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_171/bin/javac 100
-sudo echo "export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
+sudo echo -e "\nexport JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
 sleep 10
 
 echo "################################################################"
