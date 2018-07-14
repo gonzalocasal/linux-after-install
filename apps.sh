@@ -11,6 +11,13 @@ sudo apt install -y software-properties-common python-software-properties
 sleep 10
 
 echo "################################################################"
+echo "###################    BLUETOOTH   ######################"
+echo "################################################################"
+sudo add-apt-repository ppa:bluetooth/bluez --yes
+sudo apt -y install bluez
+sleep 10
+
+echo "################################################################"
 echo "###################    VLC   ######################"
 echo "################################################################"
 sudo apt update
