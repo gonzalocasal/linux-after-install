@@ -7730,8 +7730,8 @@ menubar.panel,
 
 .panel menubar:nth-child(1) label {
   margin-left: 15px;
-  text-shadow: none;
 }
+
 .composited-indicator {
     padding: 4px 6px;
 }

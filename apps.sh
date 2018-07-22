@@ -246,11 +246,13 @@ sleep 10
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
 echo "################################################################"
-sudo apt remove -y noise
+sudo apt purge -y noise
+sudo apt purge -y pantheon-photos
+sudo apt purge -y pantheon-photos-common
+sudo apt purge -y audience
+sudo apt purge -y epiphany-browser
+sudo apt purge -y io.elementary.code
+sleep 10
 sudo apt -y autoremove
 sudo apt clean
-sleep 10
-sudo apt-get purge pantheon-photos pantheon-photos-common
-sudo apt remove audience
-sudo apt remove epiphany-browser 
 sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbus-bus.disabled
