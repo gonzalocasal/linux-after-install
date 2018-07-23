@@ -220,13 +220,15 @@ sleep 10
 echo "################################################################"
 echo "###################    JAVA   ######################"
 echo "################################################################"
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz"
+wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz" -O jdk-8u181-linux-x64.tar.gz
 sudo mkdir /opt/jdk
-sudo tar -zxf jdk-8u171-linux-x64.tar.gz -C /opt/jdk
-sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_171/bin/java 100
-sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_171/bin/javac 100
+sudo tar -zxf jdk-8u181-linux-x64.tar.gz -C /opt/jdk
+sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_181/bin/java 100
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_181/bin/javac 100
 sudo echo -e "\nexport JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
 sleep 10
+
+
 
 echo "################################################################"
 echo "###################    ECLIPSE   ######################"
