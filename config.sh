@@ -22,6 +22,8 @@ echo "################################################################"
 echo "###################    THEME   ######################"
 echo "################################################################"
 cp -R Files/Theme/. ~/.themes
+gsettings set org.gnome.desktop.interface gtk-theme "Matcha-azul"
+gsettings set org.pantheon.desktop.gala.appearance button-layout ":minimize,maximize,close"
 
 echo "################################################################"
 echo "###################    WALLPAPERS   ######################"

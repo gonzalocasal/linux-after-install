@@ -8,6 +8,7 @@ echo "################################################################"
 echo "###################    EXTRAS   ######################"
 echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
+sudo apt install -y gnome-themes-standard
 sleep 10
 
 echo "################################################################"
