@@ -16,7 +16,8 @@ gsettings set io.elementary.desktop.wingpanel.applications-menu columns 6 && gse
 echo "################################################################"
 echo "###################    ICONS   ######################"
 echo "################################################################"
-mkdir ~/.local/share/icons/ && cp -R Files/Icons/. ~/.local/share/icons
+mkdir ~/.local/share/icons/ && cp -R "Files/Icons Packs/." ~/.local/share/icons
+mkdir ~/Imágenes/Iconos && cp -R "Files/Icons/." ~/Imágenes/Iconos
 
 echo "################################################################"
 echo "###################    THEME   ######################"
