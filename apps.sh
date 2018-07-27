@@ -9,6 +9,18 @@ echo "###################    EXTRAS   ######################"
 echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
 sudo apt install -y gnome-themes-standard
+sudo apt install -y gtk2-engines-pixbuf:i386
+sleep 10
+
+echo "################################################################"
+echo "###################    JAVA   ######################"
+echo "################################################################"
+wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz" -O jdk-8u181-linux-x64.tar.gz
+sudo mkdir /opt/jdk
+sudo tar -zxf jdk-8u181-linux-x64.tar.gz -C /opt/jdk
+sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_181/bin/java 100
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_181/bin/javac 100
+sudo echo -e "\nexport JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
 sleep 10
 
 echo "################################################################"
@@ -219,25 +231,14 @@ sudo apt install -y mysql-server
 sleep 10
 
 echo "################################################################"
-echo "###################    JAVA   ######################"
-echo "################################################################"
-wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz" -O jdk-8u181-linux-x64.tar.gz
-sudo mkdir /opt/jdk
-sudo tar -zxf jdk-8u181-linux-x64.tar.gz -C /opt/jdk
-sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_181/bin/java 100
-sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_181/bin/javac 100
-sudo echo -e "\nexport JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
-sleep 10
-
-
-
-echo "################################################################"
 echo "###################    ECLIPSE   ######################"
 echo "################################################################"
 sudo add-apt-repository --yes ppa:ubuntu-desktop/ubuntu-make
 sudo apt update
 sudo apt install -y ubuntu-make
 umake ide eclipse-jee
+sed -i '1i2' ~/Programas/eclipse/eclipse.ini 
+sed -i '1i--launcher.GTK_version' ~/Programas/eclipse/eclipse.ini
 sleep 10
 
 echo "################################################################"
