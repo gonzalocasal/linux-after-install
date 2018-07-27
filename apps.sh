@@ -256,6 +256,7 @@ sudo apt purge -y pantheon-photos-common
 sudo apt purge -y audience
 sudo apt purge -y epiphany-browser
 sudo apt purge -y io.elementary.code
+sudo apt purge -y openjdk*
 sleep 10
 sudo apt -y autoremove
 sudo apt clean
