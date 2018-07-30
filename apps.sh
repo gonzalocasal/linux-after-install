@@ -205,6 +205,18 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install -y sublime-text
 
+
+echo "################################################################"
+echo "###################    INTELLIJ ######################"
+echo "################################################################"
+mkdir ~/Programas
+mkdir ~/Programas/IntelliJ
+mkdir ~/Programas/IntelliJ/jdk
+wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.2.tar.gz
+wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
+tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
+tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
+
 echo "################################################################"
 echo "###################    PYTHON LOADER   ######################"
 echo "################################################################"
@@ -230,16 +242,6 @@ sudo apt update
 sudo apt install -y mysql-server
 sleep 10
 
-echo "################################################################"
-echo "###################    ECLIPSE   ######################"
-echo "################################################################"
-sudo add-apt-repository --yes ppa:ubuntu-desktop/ubuntu-make
-sudo apt update
-sudo apt install -y ubuntu-make
-umake ide eclipse-jee
-sed -i '1i2' ~/Programas/eclipse/eclipse.ini 
-sed -i '1i--launcher.GTK_version' ~/Programas/eclipse/eclipse.ini
-sleep 10
 
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
