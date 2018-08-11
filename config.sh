@@ -39,13 +39,6 @@ echo "###################    DESKTOPS FILES   ######################"
 echo "################################################################"
 cp -a Files/Desktops/. ~/.local/share/applications/
 
-
-echo "################################################################"
-echo "###################    SOUND FILES   ######################"
-echo "################################################################"
-cp -a Files/Sounds/. ~/.local/share/sounds/
-
-
 echo "################################################################"
 echo "###################    VIDEO PRIME ALIAS   ######################"
 echo "################################################################"
@@ -53,6 +46,14 @@ echo "alias intel='sudo -S <<< "PASS" prime-select intel && systemctl reboot -i'
 echo "alias nvidia='sudo -S <<< "PASS" prime-select nvidia && systemctl reboot -i'" >> ~/.bashrc
 echo "alias query='prime-select query'" >> ~/.bashrc
 source ~/.bashrc
+
+
+echo "################################################################"
+echo "###################    DLNA ALIAS   ######################"
+echo "################################################################"
+echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashrc
+source ~/.bashrc
+
 
 echo "################################################################"
 echo "###################    HOME FOLDER   ######################"
@@ -70,4 +71,5 @@ echo "################################################################"
 echo "###################    DISABLE SOUND EFFECTS ######################"
 echo "################################################################"
 gsettings set org.gnome.desktop.sound event-sounds false
+cp -a Files/Sounds/. ~/.local/share/sounds/
 

@@ -10,6 +10,7 @@ echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
 sudo apt install -y gnome-themes-standard
 sudo apt install -y gtk2-engines-pixbuf:i386
+sudo apt install -y pulseaudio-dlna pavucontrol
 sleep 10
 
 echo "################################################################"
