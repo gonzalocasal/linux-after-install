@@ -72,6 +72,15 @@ sudo rm google-chrome*.deb
 sleep 10
 
 echo "################################################################"
+echo "###################    TEAM VIEWER   ######################"
+echo "################################################################"
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo dpkg -i ./teamviewer*.deb
+sudo apt install -y -f
+sudo rm teamviewer*.deb
+sleep 10
+
+echo "################################################################"
 echo "###################    SKYPE   ######################"
 echo "################################################################"
 wget https://go.skype.com/skypeforlinux-64.deb 
@@ -253,6 +262,7 @@ sleep 10
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
 echo "################################################################"
+sudo apt purge -y gstreamer1.0-fluendo-mp3
 sudo apt purge -y noise
 sudo apt purge -y pantheon-photos
 sudo apt purge -y pantheon-photos-common

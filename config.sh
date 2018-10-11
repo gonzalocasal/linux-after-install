@@ -11,7 +11,7 @@ gsettings set org.gtk.Settings.FileChooser show-hidden false
 echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
-gsettings set io.elementary.desktop.wingpanel.applications-menu columns 6 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 5
+gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 5
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
