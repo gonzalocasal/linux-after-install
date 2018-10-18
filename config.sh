@@ -43,7 +43,7 @@ echo "################################################################"
 echo "###################    VIDEO PRIME ALIAS   ######################"
 echo "################################################################"
 echo "alias intel='sudo -S <<< "PASS" prime-select intel && systemctl reboot -i'" >> ~/.bashrc
-echo "alias nvidia='sudo -S <<< "PASS" prime-select nvidia && systemctl reboot -i'" >> ~/.bashrc
+echo "alias nvidia='sudo -S <<< "PASS" sudo apt install nvidia-driver-390 --reinstall && sudo prime-select nvidia && sudo systemctl reboot -i'" >> ~/.bashrc
 echo "alias query='prime-select query'" >> ~/.bashrc
 source ~/.bashrc
 
