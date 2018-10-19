@@ -14,17 +14,6 @@ sudo apt install -y pulseaudio-dlna pavucontrol
 sleep 10
 
 echo "################################################################"
-echo "###################    JAVA   ######################"
-echo "################################################################"
-wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-linux-x64.tar.gz" -O jdk-8u181-linux-x64.tar.gz
-sudo mkdir /opt/jdk
-sudo tar -zxf jdk-8u181-linux-x64.tar.gz -C /opt/jdk
-sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk1.8.0_181/bin/java 100
-sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk1.8.0_181/bin/javac 100
-sudo echo -e "\nexport JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")" >> ~/.bashrc
-sleep 10
-
-echo "################################################################"
 echo "###################    BLUETOOTH   ######################"
 echo "################################################################"
 sudo add-apt-repository ppa:bluetooth/bluez --yes
@@ -217,17 +206,6 @@ sudo apt install -y sublime-text
 
 
 echo "################################################################"
-echo "###################    INTELLIJ ######################"
-echo "################################################################"
-mkdir ~/Programas
-mkdir ~/Programas/IntelliJ
-mkdir ~/Programas/IntelliJ/jdk
-wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.2.tar.gz
-wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
-tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
-tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
-
-echo "################################################################"
 echo "###################    PYTHON LOADER   ######################"
 echo "################################################################"
 wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpeas/libpeas-1.0-0-python3loader_1.16.0-1ubuntu2_amd64.deb
@@ -258,6 +236,25 @@ echo "###################    VIRTUAL BOX   ######################"
 echo "################################################################"
 sudo apt install -y virtualbox virtualbox-ext-pack
 sleep 10
+
+echo "################################################################"
+echo "###################    JAVA   ######################"
+echo "################################################################"
+sudo add-apt-repository ppa:webupd8team/java --yes
+sudo apt update
+sudo apt install -y oracle-java8-installer
+sleep 10
+
+echo "################################################################"
+echo "###################    INTELLIJ ######################"
+echo "################################################################"
+mkdir ~/Programas
+mkdir ~/Programas/IntelliJ
+mkdir ~/Programas/IntelliJ/jdk
+wget -O intellij.tar.gz https://download-cf.jetbrains.com/idea/ideaIC-2018.2.5.tar.gz
+wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
+tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
+tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
 
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
