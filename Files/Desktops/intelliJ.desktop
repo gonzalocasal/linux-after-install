@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=13.0
 Type=Application
-Exec="/home/gonzalo/Programas/IntelliJ/idea-IC-182.3684.101/bin/idea.sh" %f
+Exec="/home/gonzalo/Programas/IntelliJ/idea-IC-182.4892.20/bin/idea.sh" %f
 Name=IntelliJ
 Icon=/home/gonzalo/Imágenes/Iconos/IntelliJ.png
 Categories=Development;IDE;
