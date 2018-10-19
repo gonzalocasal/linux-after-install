@@ -75,11 +75,10 @@ cp -a Files/Sounds/. ~/.local/share/sounds/
 echo "################################################################"
 echo "###################  WING PANEL  ######################"
 echo "################################################################"
-sudo su
-echo "vlc" >> /etc/wingpanel.d/ayatana.blacklist
-echo "MEGAsync" >> /etc/wingpanel.d/ayatana.blacklist
-echo "steam" >> /etc/wingpanel.d/ayatana.blacklist
-echo "Skype1" >> /etc/wingpanel.d/ayatana.blacklist
+sudo bash -c "echo 'vlc' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'MEGAsync' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'steam' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'Skype1' >> /etc/wingpanel.d/ayatana.blacklist"
 
 
 
