@@ -14,6 +14,17 @@ sudo apt install -y pulseaudio-dlna pavucontrol
 sleep 10
 
 echo "################################################################"
+echo "###################  WING PANEL  ######################"
+echo "################################################################"
+wget https://github.com/mdh34/elementary-indicators/releases/download/0.1/indicator-application-patched.deb
+wget https://launchpad.net/~elementary-os/+archive/ubuntu/stable/+files/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb
+sudo dpkg -i ./indicator*.deb
+sudo dpkg -i ./wingpanel-indicator*.deb
+sudo rm ./indicator*.deb
+sudo rm ./wingpanel-indicator*.deb
+
+
+echo "################################################################"
 echo "###################    BLUETOOTH   ######################"
 echo "################################################################"
 sudo add-apt-repository ppa:bluetooth/bluez --yes
@@ -255,6 +266,7 @@ wget -O intellij.tar.gz https://download-cf.jetbrains.com/idea/ideaIC-2018.2.5.t
 wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
 tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
 tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
+
 
 echo "################################################################"
 echo "###################    CLEANUP   ######################"

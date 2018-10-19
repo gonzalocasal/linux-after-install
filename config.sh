@@ -1,4 +1,3 @@
-###########################
 #    PERSONAL SETTINGS    #
 ###########################
 
@@ -43,7 +42,7 @@ echo "################################################################"
 echo "###################    VIDEO PRIME ALIAS   ######################"
 echo "################################################################"
 echo "alias intel='sudo -S <<< "PASS" sudo prime-select intel && sudo systemctl reboot -i'" >> ~/.bashrc
-echo "alias nvidia='sudo -S <<< "PASS" sudo prime-select nvidia && sudo systemctl reboot -i'" >> ~/.bashrc
+echo "alias nvidia='sudo -S <<< "PASS" sudo apt-get install nvidia-driver-410 --reinstall && sudo prime-select nvidia &&  sudo systemctl reboot -i'" >> ~/.bashrc
 echo "alias query='prime-select query'" >> ~/.bashrc
 source ~/.bashrc
 
@@ -53,7 +52,6 @@ echo "###################    DLNA ALIAS   ######################"
 echo "################################################################"
 echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashrc
 source ~/.bashrc
-
 
 echo "################################################################"
 echo "###################    HOME FOLDER   ######################"
@@ -72,4 +70,16 @@ echo "###################    DISABLE SOUND EFFECTS ######################"
 echo "################################################################"
 gsettings set org.gnome.desktop.sound event-sounds false
 cp -a Files/Sounds/. ~/.local/share/sounds/
+
+
+echo "################################################################"
+echo "###################  WING PANEL  ######################"
+echo "################################################################"
+sudo su
+echo "vlc" >> /etc/wingpanel.d/ayatana.blacklist
+echo "MEGAsync" >> /etc/wingpanel.d/ayatana.blacklist
+echo "steam" >> /etc/wingpanel.d/ayatana.blacklist
+echo "Skype1" >> /etc/wingpanel.d/ayatana.blacklist
+
+
 
