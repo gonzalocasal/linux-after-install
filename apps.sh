@@ -48,18 +48,9 @@ sudo apt install libreoffice-style-sifr -y
 sleep 10
 
 echo "################################################################"
-echo "###################    GPARTED   ######################"
+echo "###################    DISKS   ######################"
 echo "################################################################"
-sudo apt install gparted -y
-sleep 10
-
-echo "################################################################"
-echo "###################    SPOTIFY   ######################"
-echo "################################################################"
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
-echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update
-sudo apt install spotify-client -y
+sudo apt install gnome-disk-utility -y
 sleep 10
 
 echo "################################################################"
@@ -145,6 +136,17 @@ echo "################################################################"
 echo "###################    NAUTILUS   ######################"
 echo "################################################################"
 sudo apt install -y nautilus
+sudo apt install -y totem ffmpegthumbnailer
+sleep 10
+
+
+echo "################################################################"
+echo "###################    SPOTIFY   ######################"
+echo "################################################################"
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt install spotify-client -y
 sleep 10
 
 echo "################################################################"
@@ -159,13 +161,10 @@ sleep 10
 sudo apt install -y rhythmbox-plugin-close-on-hide
 sleep 10
 
-
 echo "################################################################"
-echo "###################    PUDDLETAG   ######################"
+echo "###################   PUDDLE TAG   ######################"
 echo "################################################################"
-sudo add-apt-repository --yes ppa:nilarimogard/webupd8
-sudo apt update
-sudo apt install -y puddletag
+sudp apt install -y puddletag
 sleep 10
 
 echo "################################################################"
