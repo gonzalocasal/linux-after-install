@@ -10,7 +10,6 @@ echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
 sudo apt install -y gnome-themes-standard
 sudo apt install -y gtk2-engines-pixbuf:i386
-sudo apt install -y pulseaudio-dlna pavucontrol
 sleep 10
 
 echo "################################################################"
@@ -22,7 +21,6 @@ sudo dpkg -i ./indicator*.deb
 sudo dpkg -i ./wingpanel-indicator*.deb
 sudo rm ./indicator*.deb
 sudo rm ./wingpanel-indicator*.deb
-
 
 echo "################################################################"
 echo "###################    BLUETOOTH   ######################"
@@ -159,6 +157,14 @@ sudo apt update
 sudo apt install -y rhythmbox-plugin-alternative-toolbar
 sleep 10
 sudo apt install -y rhythmbox-plugin-close-on-hide
+sleep 10
+
+echo "################################################################"
+echo "###################  AIRPLAY SUPPORT  ######################"
+echo "################################################################"
+sudo apt install -y pulseaudio-dlna pavucontrol
+sudo apt install -y paprefs pulseaudio-module-raop
+#paprefs
 sleep 10
 
 echo "################################################################"
