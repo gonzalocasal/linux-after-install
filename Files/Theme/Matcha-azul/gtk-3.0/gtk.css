@@ -7701,7 +7701,7 @@ filechooser placessidebar.sidebar scrollbar trough, .nautilus-window placessideb
 }
 
 .panel.maximized {
-    background-color: #000;
+    background-color: alpha(#000, 0.5);
 }
 
 .panel.translucent {
@@ -7725,7 +7725,7 @@ menubar.panel,
 }
 
 .panel menubar:nth-child(1)  {
-   margin-left: -25px;
+   margin-left: -120px;
 }
 
 .panel menubar:nth-child(1) label {
@@ -7790,3 +7790,32 @@ menubar.panel,
         0 3px 3px -3px alpha (#000, 0.35);
 }
 
+
+
+/* Calendar week, day label */
+GtkCalendar.highlight 
+{
+  background-color: #398ee7;
+  color: white;
+  font-weight: regular;
+}
+
+/*Calendar content*/
+GtkCalendar.view
+{
+  background-color: #398ee7;
+  text-align: right;
+}
+
+/* day selected */
+GtkCalendar:selected
+{
+  background-color: #398ee7;
+}
+
+
+/* Month and year */
+GtkCalendar.header
+{
+  color: #398ee7;
+}

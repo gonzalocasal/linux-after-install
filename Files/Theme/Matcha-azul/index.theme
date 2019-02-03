@@ -2,11 +2,13 @@
 Type=X-GNOME-Metatheme
 Name=Matcha-azul
 Comment=A dark modern design theme
+Inherits=elementary
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 GtkTheme=Matcha-azul
 MetacityTheme=Matcha-azul
+Inherits=elementary
 IconTheme=Matcha
 CursorTheme=Breeze_cursors
 ButtonLayout=menu:minimize,maximize,close
