@@ -10,7 +10,7 @@ gsettings set org.gtk.Settings.FileChooser show-hidden false
 echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
-gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 5
+gsettings set io.elementary.desktop.wingpanel.applications-menu columns 8 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
@@ -78,6 +78,13 @@ echo "################################################################"
 sudo bash -c "echo 'vlc' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'steam' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'Skype1' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'Google Play Music Desktop Player1' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'zoom' >> /etc/wingpanel.d/ayatana.blacklist"
 
+# HIDE DATE
+gsettings set io.elementary.desktop.wingpanel.datetime clock-show-date false
+
+#FIND wich applications use indicators
+#dbus-send --type=method_call --print-reply --dest=com.canonical.indicator.application /com/canonical/indicator/application/service com.canonical.indicator.application.service.GetApplications | grep "object path"
 
 

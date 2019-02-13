@@ -6150,6 +6150,15 @@ ConversationListView {
   border-bottom-width: 0;
   font-weight: bold; }
 
+
+
+
+
+.panel.maximized {
+    background-color: alpha(#000, 0.6);
+}
+
+
 .panel menubar:nth-child(1)  {
    margin-left: -120px;
 }

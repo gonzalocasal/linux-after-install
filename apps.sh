@@ -135,6 +135,8 @@ echo "###################    NAUTILUS   ######################"
 echo "################################################################"
 sudo apt install -y nautilus
 sudo apt install -y totem ffmpegthumbnailer
+sudo apt install -y nautilus-share
+sudo apt install -y samba
 sleep 10
 
 
@@ -226,6 +228,23 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt install -y sublime-text
 
+echo "################################################################"
+echo "###################   ZOOM  ######################"
+echo "################################################################"
+wget https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i ./zoom*.deb
+sudo apt install -y -f
+sudo rm zoom*.deb
+sleep 10
+
+echo "################################################################"
+echo "###################   MAILSPRING  ######################"
+echo "################################################################"
+wget https://updates.getmailspring.com/download?platform=linuxDeb
+sudo dpkg -i ./mailspring*.deb
+sudo apt install -y -f
+sudo rm mailspring*.deb
+sleep 10
 
 echo "################################################################"
 echo "###################    PYTHON LOADER   ######################"
@@ -237,12 +256,12 @@ sleep 10
 
 
 echo "################################################################"
-echo "###################    SQLECTRON   ######################"
+echo "###################    DBeaver   ######################"
 echo "################################################################"
-wget https://github.com/sqlectron/sqlectron-gui/releases/download/v1.29.0/Sqlectron_1.29.0_amd64.deb
-sudo dpkg -i ./Sqlectron*.deb
+wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
+sudo dpkg -i ./dbeaver*.deb
 sudo apt install -y -f
-sudo rm Sqlectron*.deb
+sudo rm dbeaver*.deb
 sleep 10
 
 echo "################################################################"
@@ -251,7 +270,6 @@ echo "################################################################"
 sudo apt update
 sudo apt install -y mysql-server
 sleep 10
-
 
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
