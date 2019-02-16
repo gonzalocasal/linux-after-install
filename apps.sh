@@ -38,6 +38,17 @@ sudo apt update
 sudo apt install vlc -y
 
 echo "################################################################"
+echo "###################    EMBY   ######################"
+echo "################################################################"
+wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.2.0/emby-server-deb_4.0.2.0_amd64.deb
+
+wget -O emby.deb https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.2.0/emby-server-deb_4.0.2.0_amd64.deb
+sudo dpkg -i ./emby.deb
+sudo apt install -y -f
+sudo rm emby.deb
+sleep 10
+
+echo "################################################################"
 echo "###################    LIBRE OFFICE   ######################"
 echo "################################################################"
 sudo add-apt-repository ppa:libreoffice/ppa --yes
