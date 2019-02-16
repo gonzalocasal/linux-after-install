@@ -5746,13 +5746,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*********
  * Panel *
  ********/
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out; }
-  .panel.maximized {
-    background-color: #000; }
-  .panel.translucent {
-    background-color: rgba(0, 0, 0, 0.5); }
 
 menubar.panel,
 .panel menubar {
@@ -6154,11 +6147,20 @@ ConversationListView {
 
 
 
+
+
 .panel.maximized {
     background-color: alpha(#000, 0.6);
 }
 
-
 .panel menubar:nth-child(1)  {
    margin-left: -120px;
 }
+
+.panel {
+  background-color: transparent;
+  transition: all 100ms ease-in-out; }
+  .panel.maximized {
+    background-color: #000; }
+  .panel.translucent {
+    background-color: rgba(0, 0, 0, 0); }

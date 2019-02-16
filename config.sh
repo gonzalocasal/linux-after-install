@@ -54,6 +54,12 @@ echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashr
 source ~/.bashrc
 
 echo "################################################################"
+echo "###################    AirPlay ######################"
+echo "################################################################"
+cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
+chmod +x ~/.toggle.sh
+
+echo "################################################################"
 echo "###################    HOME FOLDER   ######################"
 echo "################################################################"
 echo 'XDG_DESKTOP_DIR="$HOME/.config/desktop"' >> ~/.config/user-dirs.dirs
@@ -70,7 +76,6 @@ echo "###################    DISABLE SOUND EFFECTS ######################"
 echo "################################################################"
 gsettings set org.gnome.desktop.sound event-sounds false
 cp -a Files/Sounds/. ~/.local/share/sounds/
-
 
 echo "################################################################"
 echo "###################  WING PANEL  ######################"

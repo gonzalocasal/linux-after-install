@@ -10,6 +10,8 @@ echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
 sudo apt install -y gnome-themes-standard
 sudo apt install -y gtk2-engines-pixbuf:i386
+sudo apt install -y pulseaudio-dlna pavucontrol
+sudo apt install -y notify-osd
 sleep 10
 
 echo "################################################################"
@@ -164,7 +166,6 @@ sleep 10
 echo "################################################################"
 echo "###################  AIRPLAY SUPPORT  ######################"
 echo "################################################################"
-sudo apt install -y pulseaudio-dlna pavucontrol
 sudo apt install -y paprefs pulseaudio-module-raop
 #paprefs
 sleep 10
