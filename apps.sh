@@ -173,7 +173,7 @@ sleep 10
 echo "################################################################"
 echo "###################   PUDDLE TAG   ######################"
 echo "################################################################"
-sudp apt install -y puddletag
+sudo apt install -y puddletag
 sleep 10
 
 echo "################################################################"
@@ -232,19 +232,19 @@ sudo apt install -y sublime-text
 echo "################################################################"
 echo "###################   ZOOM  ######################"
 echo "################################################################"
-wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo dpkg -i ./zoom*.deb
+wget -O zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i ./zoom.deb
 sudo apt install -y -f
-sudo rm zoom*.deb
+sudo rm zoom.deb
 sleep 10
 
 echo "################################################################"
 echo "###################   MAILSPRING  ######################"
 echo "################################################################"
-wget https://updates.getmailspring.com/download?platform=linuxDeb
-sudo dpkg -i ./mailspring*.deb
+wget -O mailspring.deb https://updates.getmailspring.com/download?platform=linuxDeb
+sudo dpkg -i ./mailspring.deb
 sudo apt install -y -f
-sudo rm mailspring*.deb
+sudo rm mailspring.deb
 sleep 10
 
 echo "################################################################"

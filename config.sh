@@ -11,6 +11,8 @@ echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
 gsettings set io.elementary.desktop.wingpanel.applications-menu columns 8 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
+gsettings set org.gnome.mutter overlay-key "'Super_L'"
+gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
@@ -69,7 +71,6 @@ echo "################################################################"
 echo "###################    NATURAL SCROLL DISABLE   ######################"
 echo "################################################################"
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
-
 
 echo "################################################################"
 echo "###################    DISABLE SOUND EFFECTS ######################"
