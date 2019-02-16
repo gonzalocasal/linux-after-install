@@ -40,8 +40,6 @@ sudo apt install vlc -y
 echo "################################################################"
 echo "###################    EMBY   ######################"
 echo "################################################################"
-wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.2.0/emby-server-deb_4.0.2.0_amd64.deb
-
 wget -O emby.deb https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.2.0/emby-server-deb_4.0.2.0_amd64.deb
 sudo dpkg -i ./emby.deb
 sudo apt install -y -f
@@ -284,6 +282,17 @@ sudo apt install -y mysql-server
 sleep 10
 
 echo "################################################################"
+echo "###################    INTELLIJ ######################"
+echo "################################################################"
+mkdir ~/Programas
+mkdir ~/Programas/IntelliJ
+mkdir ~/Programas/IntelliJ/jdk
+wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.3.4.tar.gz
+wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
+tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
+tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
+
+echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
 echo "################################################################"
 sudo apt install -y virtualbox virtualbox-ext-pack
@@ -296,18 +305,6 @@ sudo add-apt-repository ppa:webupd8team/java --yes
 sudo apt update
 sudo apt install -y oracle-java8-installer
 sleep 10
-
-echo "################################################################"
-echo "###################    INTELLIJ ######################"
-echo "################################################################"
-mkdir ~/Programas
-mkdir ~/Programas/IntelliJ
-mkdir ~/Programas/IntelliJ/jdk
-wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.3.4.tar.gz
-wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
-tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
-tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
-
 
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
