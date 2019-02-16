@@ -10,7 +10,7 @@ gsettings set org.gtk.Settings.FileChooser show-hidden false
 echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
-gsettings set io.elementary.desktop.wingpanel.applications-menu columns 8 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
+gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
 gsettings set org.gnome.mutter overlay-key "'Super_L'"
 gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
@@ -32,6 +32,8 @@ echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
 cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
+echo '\n' >> ~/.bashrc
+sed -i -e '$a\' ~/.bashrc
 echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/; find ~/.local/share/backgrounds/ -type f -exec chmod 644 {} \;'" >> ~/.bashrc
 source ~/.bashrc
 
@@ -56,10 +58,21 @@ echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashr
 source ~/.bashrc
 
 echo "################################################################"
-echo "###################    AirPlay ######################"
+echo "###################    AirPlay    ######################"
 echo "################################################################"
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'AirPlay'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Shift>A'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'/bin/sh /home/gonzalo/.toggle.sh'"
+
+
+echo "################################################################"
+echo "###################    Media hotkeys     ######################"
+echo "################################################################"
+gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
+gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
+gsettings set org.gnome.settings-daemon.plugins.media-keys previous '<Primary><Shift>Left'
 
 echo "################################################################"
 echo "###################    HOME FOLDER   ######################"
@@ -81,6 +94,8 @@ cp -a Files/Sounds/. ~/.local/share/sounds/
 echo "################################################################"
 echo "###################  WING PANEL  ######################"
 echo "################################################################"
+
+
 sudo bash -c "echo 'vlc' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'steam' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'Skype1' >> /etc/wingpanel.d/ayatana.blacklist"
