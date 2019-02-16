@@ -15,6 +15,11 @@ gsettings set org.gnome.mutter overlay-key "'Super_L'"
 gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
 echo "################################################################"
+echo "###################    MINIMIZE WINDOW HOTKEY  ######################"
+echo "################################################################"
+gsettings set org.gnome.desktop.wm.keybindings minimize '<Super>d'
+
+echo "################################################################"
 echo "###################    ICONS   ######################"
 echo "################################################################"
 mkdir ~/.local/share/icons/ && cp -R "Files/Icons Packs/." ~/.local/share/icons
@@ -58,7 +63,7 @@ echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashr
 source ~/.bashrc
 
 echo "################################################################"
-echo "###################    AirPlay    ######################"
+echo "###################    AIRPLAY    ######################"
 echo "################################################################"
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
@@ -68,7 +73,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 
 echo "################################################################"
-echo "###################    Media hotkeys     ######################"
+echo "###################    MEDIA HOTKEYS     ######################"
 echo "################################################################"
 gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
 gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
