@@ -14,10 +14,10 @@ gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gse
 gsettings set org.gnome.mutter overlay-key "'Super_L'"
 gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
-echo "################################################################"
+echo "################################################################"d
 echo "###################    MINIMIZE WINDOW HOTKEY  ######################"
 echo "################################################################"
-gsettings set org.gnome.desktop.wm.keybindings minimize '<Super>d'
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>d']"
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
@@ -71,7 +71,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Shift>A'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'/bin/sh /home/gonzalo/.toggle.sh'"
 
-
 echo "################################################################"
 echo "###################    MEDIA HOTKEYS     ######################"
 echo "################################################################"
@@ -100,7 +99,6 @@ echo "################################################################"
 echo "###################  WING PANEL  ######################"
 echo "################################################################"
 
-
 sudo bash -c "echo 'vlc' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'steam' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'Skype1' >> /etc/wingpanel.d/ayatana.blacklist"
@@ -112,5 +110,3 @@ gsettings set io.elementary.desktop.wingpanel.datetime clock-show-date false
 
 #FIND wich applications use indicators
 #dbus-send --type=method_call --print-reply --dest=com.canonical.indicator.application /com/canonical/indicator/application/service com.canonical.indicator.application.service.GetApplications | grep "object path"
-
-
