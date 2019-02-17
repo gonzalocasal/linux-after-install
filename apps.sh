@@ -12,6 +12,7 @@ sudo apt install -y gnome-themes-standard
 sudo apt install -y gtk2-engines-pixbuf:i386
 sudo apt install -y pulseaudio-dlna pavucontrol
 sudo apt install -y notify-osd
+sudo apt install -y gnome-system-monitor
 sleep 10
 
 echo "################################################################"
@@ -291,6 +292,7 @@ wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.3.4.tar.
 wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
 tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
 tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
+
 
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
