@@ -11,20 +11,28 @@ echo "################################################################"
 echo "###################    SLINGSHOT SETTINGS  ######################"
 echo "################################################################"
 gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
-gsettings set org.gnome.mutter overlay-key "'Super_L'"
 gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
 echo "################################################################"d
 echo "###################    USEFUL HOTKEYS  ######################"
 echo "################################################################"
+cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
+chmod +x ~/.toggle.sh
+gsettings set org.gnome.mutter overlay-key "'Super_L'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
+gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
+gsettings set org.gnome.settings-daemon.plugins.media-keys previous '<Primary><Shift>Left'
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>d']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'gala restart'" &&
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Alt>g'" &&
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'gala restart'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Alt>g'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'killall -HUP gala'"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'xkill'" &&
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Alt>x'" &&
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'xkill'"
-
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name "'xkill'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding "'<Ctrl><Alt>x'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command "'xkill'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name "'AirPlay'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding "'<Ctrl><Shift>A'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ command "'/bin/sh /home/gonzalo/.toggle.sh'"
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
@@ -44,7 +52,6 @@ echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
 cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
-echo '\n' >> ~/.bashrc
 sed -i -e '$a\' ~/.bashrc
 echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/; find ~/.local/share/backgrounds/ -type f -exec chmod 644 {} \;'" >> ~/.bashrc
 source ~/.bashrc
@@ -62,28 +69,11 @@ echo "alias nvidia='sudo -S <<< "PASS" sudo apt-get install nvidia-driver-410 --
 echo "alias query='prime-select query'" >> ~/.bashrc
 source ~/.bashrc
 
-
 echo "################################################################"
 echo "###################    DLNA ALIAS   ######################"
 echo "################################################################"
 echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashrc
 source ~/.bashrc
-
-echo "################################################################"
-echo "###################    AIRPLAY    ######################"
-echo "################################################################"
-cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
-chmod +x ~/.toggle.sh
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'AirPlay'"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Shift>A'"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'/bin/sh /home/gonzalo/.toggle.sh'"
-
-echo "################################################################"
-echo "###################    MEDIA HOTKEYS     ######################"
-echo "################################################################"
-gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
-gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
-gsettings set org.gnome.settings-daemon.plugins.media-keys previous '<Primary><Shift>Left'
 
 echo "################################################################"
 echo "###################    HOME FOLDER   ######################"

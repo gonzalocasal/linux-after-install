@@ -149,6 +149,7 @@ sudo apt install -y nautilus
 sudo apt install -y totem ffmpegthumbnailer
 sudo apt install -y nautilus-share
 sudo apt install -y samba
+sudo apt install -y nautilus-extension-gnome-terminal
 sleep 10
 
 
