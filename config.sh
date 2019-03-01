@@ -13,17 +13,23 @@ echo "################################################################"
 gsettings set io.elementary.desktop.wingpanel.applications-menu columns 7 && gsettings set io.elementary.desktop.wingpanel.applications-menu rows 6
 gsettings set org.pantheon.desktop.gala.behavior overlay-action "'wingpanel --toggle-indicator=app-launcher'"
 
-echo "################################################################"d
+echo "################################################################"
+echo "###################    AUTOSTART   ######################"
+echo "################################################################"
+mkdir ~/.config/autostart/
+cp -R Files/Autostart/. ~/.config/autostart/
+
+echo "################################################################"
 echo "###################    USEFUL HOTKEYS  ######################"
 echo "################################################################"
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
 gsettings set org.gnome.mutter overlay-key "'Super_L'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
 gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
 gsettings set org.gnome.settings-daemon.plugins.media-keys previous '<Primary><Shift>Left'
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>d']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'gala restart'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Alt>g'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'killall -HUP gala'"
@@ -33,6 +39,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name "'AirPlay'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding "'<Ctrl><Shift>A'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ command "'/bin/sh /home/gonzalo/.toggle.sh'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ binding "'<Super>space'"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/ command "'slingscold'"
 
 echo "################################################################"
 echo "###################    ICONS   ######################"
@@ -98,6 +106,7 @@ echo "################################################################"
 
 sudo bash -c "echo 'vlc' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'steam' >> /etc/wingpanel.d/ayatana.blacklist"
+sudo bash -c "echo 'MEGAsync' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'Skype1' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'Google Play Music Desktop Player1' >> /etc/wingpanel.d/ayatana.blacklist"
 sudo bash -c "echo 'zoom' >> /etc/wingpanel.d/ayatana.blacklist"
@@ -107,3 +116,9 @@ gsettings set io.elementary.desktop.wingpanel.datetime clock-show-date false
 
 #FIND wich applications use indicators
 #dbus-send --type=method_call --print-reply --dest=com.canonical.indicator.application /com/canonical/indicator/application/service com.canonical.indicator.application.service.GetApplications | grep "object path"
+
+echo "################################################################"
+echo "###################    BLUETOOTH   ######################"
+echo "################################################################"
+sudo cp -R Files/Bluetooth/. /lib/systemd/system-sleep/
+sudo chmod 777 /lib/systemd/system-sleep/bt

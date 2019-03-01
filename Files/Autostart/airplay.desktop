@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=airplay
+Exec=pacmd unload-module module-raop-discover
+Type=Application

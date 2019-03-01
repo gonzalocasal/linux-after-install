@@ -25,6 +25,20 @@ sudo dpkg -i ./wingpanel-indicator*.deb
 sudo rm ./indicator*.deb
 sudo rm ./wingpanel-indicator*.deb
 
+
+echo "################################################################"
+echo "###################  SLINGSCOLD ######################"
+echo "################################################################"
+sudo add-apt-repository ppa:noobslab/macbuntu --yes
+sudo apt update
+sudo apt -y install slingscold
+
+echo "################################################################"
+echo "###################  SCREENSAVER  ######################"
+echo "################################################################"
+sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
+
+
 echo "################################################################"
 echo "###################    BLUETOOTH   ######################"
 echo "################################################################"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=MEGAsync
+Comment=Easy automated syncing between your computers and your MEGA cloud drive.
+Exec=megasync
+Icon=mega
+
+
