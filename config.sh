@@ -25,11 +25,13 @@ echo "################################################################"
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
 gsettings set org.gnome.mutter overlay-key "'Super_L'"
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys play '<Primary><Shift>space'
 gsettings set org.gnome.settings-daemon.plugins.media-keys next '<Primary><Shift>Right'
 gsettings set org.gnome.settings-daemon.plugins.media-keys previous '<Primary><Shift>Left'
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down '<Primary><Shift>Down'
+gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up '<Primary><Shift>Up'
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>d']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "'gala restart'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "'<Ctrl><Alt>g'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "'killall -HUP gala'"
@@ -118,7 +120,15 @@ gsettings set io.elementary.desktop.wingpanel.datetime clock-show-date false
 #dbus-send --type=method_call --print-reply --dest=com.canonical.indicator.application /com/canonical/indicator/application/service com.canonical.indicator.application.service.GetApplications | grep "object path"
 
 echo "################################################################"
-echo "###################    BLUETOOTH   ######################"
+echo "###################    FN LOGITECH KEYBOARD   ######################"
 echo "################################################################"
-sudo cp -R Files/Bluetooth/. /lib/systemd/system-sleep/
-sudo chmod 777 /lib/systemd/system-sleep/bt
+
+sudo apt install gcc
+mkdir ~/.kconfig
+cd ~/.kconfig
+wget https://github.com/jergusg/k380-function-keys-conf/archive/v1.0.tar.gz
+tar -xvzf v1.0.tar.gz
+cd k380-function-keys-conf-1.0/
+./build.sh
+sudo ./k380_conf -d /dev/hidraw1 -f off
+sudo cp 80-k380.rules /etc/udev/rules.d/ && sudo udevadm control --reload

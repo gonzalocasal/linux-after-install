@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Disks
+Comment=Manage Drives and Media
+Exec=gnome-disks
+Icon=gnome-disks
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
