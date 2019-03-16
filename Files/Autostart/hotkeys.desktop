@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=hotkeys
+Exec=/bin/sh /home/gonzalo/.hotkeys.sh
+Type=Application
+Name[es_AR]=hotkeys.desktop
