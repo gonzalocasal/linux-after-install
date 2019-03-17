@@ -8,23 +8,10 @@ echo "################################################################"
 echo "###################    EXTRAS   ######################"
 echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
-sudo apt install -y gnome-themes-standard
-sudo apt install -y gtk2-engines-pixbuf:i386
 sudo apt install -y pulseaudio-dlna pavucontrol
-sudo apt install -y notify-osd
 sudo apt install -y libnotify-bin
-sudo apt install -y gnome-system-monitor
+sudo apt install -y notify-osd
 sleep 10
-
-echo "################################################################"
-echo "###################  WING PANEL  ######################"
-echo "################################################################"
-wget https://github.com/mdh34/elementary-indicators/releases/download/0.1/indicator-application-patched.deb
-wget https://launchpad.net/~elementary-os/+archive/ubuntu/stable/+files/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb
-sudo dpkg -i ./indicator*.deb
-sudo dpkg -i ./wingpanel-indicator*.deb
-sudo rm ./indicator*.deb
-sudo rm ./wingpanel-indicator*.deb
 
 
 echo "################################################################"
@@ -39,19 +26,6 @@ echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
 
-
-echo "################################################################"
-echo "###################    BLUETOOTH   ######################"
-echo "################################################################"
-sudo add-apt-repository ppa:bluetooth/bluez --yes
-sudo apt -y install bluez
-sleep 10
-
-echo "################################################################"
-echo "###################    VLC   ######################"
-echo "################################################################"
-sudo apt update
-sudo apt install vlc -y
 
 echo "################################################################"
 echo "###################    EMBY   ######################"
@@ -105,12 +79,6 @@ sudo apt install -y -f
 rm skype*.deb
 sleep 10
 
-echo "################################################################"
-echo "###################    FIREFOX   ######################"
-echo "################################################################"
-sudo apt update
-sudo apt install -y firefox
-sleep 10
 
 echo "################################################################"
 echo "###################    BITTORRENT   ######################"
@@ -124,14 +92,6 @@ echo "################################################################"
 sudo apt install -y unrar
 sleep 10
 
-echo "################################################################"
-echo "###################    ELEMENTARY TWEAKS   ######################"
-echo "################################################################"
-sudo apt install -y software-properties-common
-sudo add-apt-repository --yes ppa:philip.scott/elementary-tweaks
-sudo apt update
-sudo apt install -y elementary-tweaks
-sleep 10
 
 echo "################################################################"
 echo "###################    GIMP   ######################"
@@ -157,15 +117,6 @@ sudo apt update
 sudo apt install -y steam
 sleep 10
 
-echo "################################################################"
-echo "###################    NAUTILUS   ######################"
-echo "################################################################"
-sudo apt install -y nautilus
-sudo apt install -y totem ffmpegthumbnailer
-sudo apt install -y nautilus-share
-sudo apt install -y samba
-sudo apt install -y nautilus-extension-gnome-terminal
-sleep 10
 
 
 echo "################################################################"
@@ -323,19 +274,3 @@ sudo add-apt-repository ppa:webupd8team/java --yes
 sudo apt update
 sudo apt install -y oracle-java8-installer
 sleep 10
-
-echo "################################################################"
-echo "###################    CLEANUP   ######################"
-echo "################################################################"
-sudo apt purge -y gstreamer1.0-fluendo-mp3
-sudo apt purge -y noise
-sudo apt purge -y pantheon-photos
-sudo apt purge -y pantheon-photos-common
-sudo apt purge -y audience
-sudo apt purge -y epiphany-browser
-sudo apt purge -y io.elementary.code
-sudo apt purge -y openjdk*
-sleep 10
-sudo apt -y autoremove
-sudo apt clean
-sudo mv /etc/xdg/autostart/at-spi-dbus-bus.desktop /etc/xdg/autostart/at-spi-dbus-bus.disabled
