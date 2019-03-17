@@ -108,12 +108,13 @@ echo "################################################################"
 echo "###################    FN LOGITECH KEYBOARD   ######################"
 echo "################################################################"
 
-sudo apt install gcc
-mkdir ~/.kconfig
-cd ~/.kconfig
-wget https://github.com/jergusg/k380-function-keys-conf/archive/v1.0.tar.gz
-tar -xvzf v1.0.tar.gz
-cd k380-function-keys-conf-1.0/
-./build.sh
-sudo ./k380_conf -d /dev/hidraw1 -f off
-sudo cp 80-k380.rules /etc/udev/rules.d/ && sudo udevadm control --reload
+sudo apt install -y gcc &&
+mkdir ~/.kconfig &&
+cd ~/.kconfig &&
+wget https://github.com/jergusg/k380-function-keys-conf/archive/v1.0.tar.gz &&
+tar -xvzf v1.0.tar.gz &&
+cd k380-function-keys-conf-1.0/ &&
+./build.sh &&
+sudo ./k380_conf -d /dev/hidraw1 -f off &&
+sudo cp 80-k380.rules /etc/udev/rules.d/ && 
+sudo udevadm control --reload
