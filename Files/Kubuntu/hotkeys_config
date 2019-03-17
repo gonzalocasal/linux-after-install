@@ -1,18 +1,20 @@
-[khotkeys][Global Shortcuts]
+[kmix][Global Shortcuts]
+decrease_microphone_volume=Microphone Volume Down
+decrease_volume=Ctrl+Shift+Down;\s
+increase_microphone_volume=Microphone Volume Up
+increase_volume=Ctrl+Shift+Up;\s
+mic_mute=Microphone Mute
+mute=Volume Mute
+
+[kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
 Decrease Opacity=none
-Disable Touchpad=Touchpad Off
-Enable Touchpad=Touchpad On
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
-Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
-Lock Session=Ctrl+Alt+L; Screensaver
-Log Out=Ctrl+Alt+Del
-Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 MinimizeAll=Meta+D
 MoveMouseToCenter=Meta+F6
 MoveMouseToFocus=Meta+F5
@@ -20,7 +22,6 @@ MoveZoomDown=Meta+Ctrl+Down
 MoveZoomLeft=Meta+Ctrl+Left
 MoveZoomRight=Meta+Ctrl+Right
 MoveZoomUp=Meta+Ctrl+Up
-Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=none
@@ -66,7 +67,6 @@ Switch to Screen 4=none
 Switch to Screen 5=none
 Switch to Screen 6=none
 Switch to Screen 7=none
-Toggle Touchpad=Touchpad Toggle
 Toggle Window Raise/Lower=none
 Walk Through Desktop List=none
 Walk Through Desktop List (Reverse)=none
@@ -154,19 +154,11 @@ view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
 {01460165-b685-4645-ae32-ed249903c3e2}=Meta+Shift+Print
+{390c6533-d916-4bb0-9159-295c912a8bfb}=Ctrl+Shift+A
 {4af16aa3-f655-4a6d-ad10-76f02b69e58b}=Meta+Print
 {516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Print
-{9e78ad5f-808a-4c27-ba59-2559311e5055}=Ctrl+Shift+A
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 {ed346e27-7b5c-447b-a23a-17f748de7a29}=Shift+Print
-
-[kmix][Global Shortcuts]
-decrease_microphone_volume=Microphone Volume Down
-decrease_volume=Ctrl+Shift+Down
-increase_microphone_volume=Microphone Volume Up
-increase_volume=Ctrl+Shift+Up
-mic_mute=Microphone Mute
-mute=Volume Mute
 
 [mediacontrol][Global Shortcuts]
 nextmedia=Ctrl+Shift+Right
