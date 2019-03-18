@@ -9,6 +9,7 @@ echo "###################    EXTRAS   ######################"
 echo "################################################################"
 sudo apt install -y software-properties-common python-software-properties
 sudo apt install -y pulseaudio-dlna pavucontrol
+sudo apt install -y fonts-roboto
 sudo apt install -y libnotify-bin
 sudo apt install -y notify-osd
 sleep 10

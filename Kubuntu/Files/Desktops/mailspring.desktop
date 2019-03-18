@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Network;Email;
+Comment=The best email app for people and teams at work
+Exec=/usr/bin/mailspring %U
+GenericName=Mailspring
+Icon=/home/gonzalo/Imágenes/Iconos/email.png
+Keywords=email;internet;
+MimeType=x-scheme-handler/mailto;x-scheme-handler/mailspring;
+Name=Mailspring
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+StartupWMClass=Mailspring
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
