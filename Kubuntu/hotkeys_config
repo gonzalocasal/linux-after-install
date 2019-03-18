@@ -1,3 +1,20 @@
+[KDE Keyboard Layout Switcher][Global Shortcuts]
+Disable Touchpad=Touchpad Off
+Enable Touchpad=Touchpad On
+Show System Activity=Ctrl+Esc
+Switch to Next Keyboard Layout=Ctrl+Alt+K
+Toggle Touchpad=Touchpad Toggle
+display=Display; Meta+P
+{01460165-b685-4645-ae32-ed249903c3e2}=Meta+Shift+Print
+{390c6533-d916-4bb0-9159-295c912a8bfb}=Ctrl+Shift+A
+{4af16aa3-f655-4a6d-ad10-76f02b69e58b}=Meta+Print
+{516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Print
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+{ed346e27-7b5c-447b-a23a-17f748de7a29}=Shift+Print
+
+[kaccess][Global Shortcuts]
+Toggle Screen Reader On and Off=Meta+Alt+S
+
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
 decrease_volume=Ctrl+Shift+Down;\s
@@ -6,15 +23,23 @@ increase_volume=Ctrl+Shift+Up;\s
 mic_mute=Microphone Mute
 mute=Volume Mute
 
-[kwin][Global Shortcuts]
+[krunner][Global Shortcuts]
+run command=Alt+Space; Alt+F2; Search
+run command on clipboard contents=Alt+Shift+F2
+
+[ksmserver][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
+Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
+Lock Session=Ctrl+Alt+L; Screensaver
+Log Out=Ctrl+Alt+Del
+Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 MinimizeAll=Meta+D
 MoveMouseToCenter=Meta+F6
 MoveMouseToFocus=Meta+F5
@@ -22,6 +47,7 @@ MoveZoomDown=Meta+Ctrl+Down
 MoveZoomLeft=Meta+Ctrl+Left
 MoveZoomRight=Meta+Ctrl+Right
 MoveZoomUp=Meta+Ctrl+Up
+Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=none
@@ -153,15 +179,78 @@ Window to Screen 7=none
 view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
-{01460165-b685-4645-ae32-ed249903c3e2}=Meta+Shift+Print
-{390c6533-d916-4bb0-9159-295c912a8bfb}=Ctrl+Shift+A
-{4af16aa3-f655-4a6d-ad10-76f02b69e58b}=Meta+Print
-{516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Print
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
-{ed346e27-7b5c-447b-a23a-17f748de7a29}=Shift+Print
+
+[lattedock][Global Shortcuts]
+activate task manager entry 1=none
+activate task manager entry 10=none
+activate task manager entry 2=none
+activate task manager entry 3=none
+activate task manager entry 4=none
+activate task manager entry 5=none
+activate task manager entry 6=none
+activate task manager entry 7=none
+activate task manager entry 8=none
+activate task manager entry 9=none
+activate widget 114=none
+clear-history=none
+clipboard_action=none
+cycleNextAction=none
+cyclePrevAction=none
+edit_clipboard=none
+new instance for task manager entry 1=Meta+Ctrl+1
+new instance for task manager entry 10=Meta+Ctrl+0
+new instance for task manager entry 2=Meta+Ctrl+2
+new instance for task manager entry 3=Meta+Ctrl+3
+new instance for task manager entry 4=Meta+Ctrl+4
+new instance for task manager entry 5=Meta+Ctrl+5
+new instance for task manager entry 6=Meta+Ctrl+6
+new instance for task manager entry 7=Meta+Ctrl+7
+new instance for task manager entry 8=Meta+Ctrl+8
+new instance for task manager entry 9=Meta+Ctrl+9
+repeat_action=none
+show latte dock=Meta+`
+show-barcode=none
+show-on-mouse-pos=none
 
 [mediacontrol][Global Shortcuts]
 nextmedia=Ctrl+Shift+Right
 playpausemedia=Ctrl+Shift+Space
 previousmedia=Ctrl+Shift+Left
 stopmedia=Media Stop
+
+[org_kde_powerdevil][Global Shortcuts]
+Decrease Keyboard Brightness=Keyboard Brightness Down
+Decrease Screen Brightness=Monitor Brightness Down
+Hibernate=Hibernate
+Increase Keyboard Brightness=Keyboard Brightness Up
+Increase Screen Brightness=Monitor Brightness Up
+PowerOff=Power Off
+Sleep=Sleep
+Toggle Keyboard Backlight=Keyboard Light On/Off
+
+[plasmashell][Global Shortcuts]
+activate task manager entry 1=Meta+1
+activate task manager entry 10=Meta+0
+activate task manager entry 2=Meta+2
+activate task manager entry 3=Meta+3
+activate task manager entry 4=Meta+4
+activate task manager entry 5=Meta+5
+activate task manager entry 6=Meta+6
+activate task manager entry 7=Meta+7
+activate task manager entry 8=Meta+8
+activate task manager entry 9=Meta+9
+activate widget 22=none
+activate widget 38=none
+clear-history=none
+clipboard_action=Ctrl+Alt+X
+cycleNextAction=none
+cyclePrevAction=none
+edit_clipboard=none
+manage activities=Meta+Q
+next activity=Meta+Tab
+previous activity=Meta+Shift+Tab
+repeat_action=Ctrl+Alt+R
+show dashboard=Ctrl+F12
+show-barcode=none
+show-on-mouse-pos=none
+stop current activity=Meta+S
