@@ -10,9 +10,9 @@ chmod +x ~/.toggle.sh
 echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
-cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/
+sudo cp -a ~/Imágenes/Wallpapers/. /usr/share/wallpapers/
 sed -i -e '$a\' ~/.bashrc
-echo "alias walls='rm -r ~/.local/share/backgrounds/*; cp -a ~/Imágenes/Wallpapers/. ~/.local/share/backgrounds/; find ~/.local/share/backgrounds/ -type f -exec chmod 644 {} \;'" >> ~/.bashrc
+echo "alias walls='sudo rm -r /usr/share/wallpapers/*; sudo cp -a ~/Imágenes/Wallpapers/. /usr/share/wallpapers/;'" >> ~/.bashrc
 source ~/.bashrc
 
 echo "################################################################"
@@ -24,7 +24,7 @@ echo "################################################################"
 echo "###################    DLNA ALIAS   ######################"
 echo "################################################################"
 echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashrc
-source ~/.bashrc
+source ~/.bashrc                               
 
 echo "################################################################"
 echo "###################    FN LOGITECH KEYBOARD   ######################"
