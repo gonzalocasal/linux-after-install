@@ -1,19 +1,23 @@
-[KDE Keyboard Layout Switcher][Global Shortcuts]
+[kaccess][Global Shortcuts]
+Toggle Screen Reader On and Off=Meta+Alt+S
+
+[kded5][Global Shortcuts]
 Disable Touchpad=Touchpad Off
 Enable Touchpad=Touchpad On
 Show System Activity=Ctrl+Esc
+Switch keyboard layout to Spanish=none
+Switch keyboard layout to Spanish (Latin American)=none
 Switch to Next Keyboard Layout=Ctrl+Alt+K
 Toggle Touchpad=Touchpad Toggle
 display=Display; Meta+P
+
+[khotkeys][Global Shortcuts]
 {01460165-b685-4645-ae32-ed249903c3e2}=Meta+Shift+Print
 {390c6533-d916-4bb0-9159-295c912a8bfb}=Ctrl+Shift+A
 {4af16aa3-f655-4a6d-ad10-76f02b69e58b}=Meta+Print
 {516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Print
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 {ed346e27-7b5c-447b-a23a-17f748de7a29}=Shift+Print
-
-[kaccess][Global Shortcuts]
-Toggle Screen Reader On and Off=Meta+Alt+S
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
@@ -28,18 +32,21 @@ run command=Alt+Space; Alt+F2; Search
 run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
+Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
+Lock Session=Ctrl+Alt+L; Screensaver
+Log Out=Ctrl+Alt+Del
+Log Out Without Confirmation=Ctrl+Alt+Shift+Del
+Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
+
+[kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
 Decrease Opacity=none
 Expose=Ctrl+F9
 ExposeAll=Ctrl+F10; Launch (C)
 ExposeClass=Ctrl+F7
-Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
 Increase Opacity=none
 Invert Screen Colors=none
 Kill Window=Ctrl+Alt+Esc
-Lock Session=Ctrl+Alt+L; Screensaver
-Log Out=Ctrl+Alt+Del
-Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 MinimizeAll=Meta+D
 MoveMouseToCenter=Meta+F6
 MoveMouseToFocus=Meta+F5
@@ -47,7 +54,6 @@ MoveZoomDown=Meta+Ctrl+Down
 MoveZoomLeft=Meta+Ctrl+Left
 MoveZoomRight=Meta+Ctrl+Right
 MoveZoomUp=Meta+Ctrl+Up
-Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 Remove Window From Group=none
 Setup Window Shortcut=none
 Show Desktop=none
@@ -115,7 +121,7 @@ Window Fullscreen=none
 Window Grow Horizontal=none
 Window Grow Vertical=none
 Window Lower=none
-Window Maximize=Meta+PgUp
+Window Maximize=Meta+Up
 Window Maximize Horizontal=none
 Window Maximize Vertical=none
 Window Minimize=Meta+M
@@ -136,11 +142,11 @@ Window Quick Tile Bottom Left=none
 Window Quick Tile Bottom Right=none
 Window Quick Tile Left=Meta+Left
 Window Quick Tile Right=Meta+Right
-Window Quick Tile Top=Meta+Up
+Window Quick Tile Top=none
 Window Quick Tile Top Left=none
 Window Quick Tile Top Right=none
 Window Raise=none
-Window Resize=Alt+Z
+Window Resize=Meta+Z
 Window Shade=none
 Window Shrink Horizontal=none
 Window Shrink Vertical=none
