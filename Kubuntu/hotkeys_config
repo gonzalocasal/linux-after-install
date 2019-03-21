@@ -1,29 +1,31 @@
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
 
-[kded5][Global Shortcuts]
+[kcm_touchpad][Global Shortcuts]
 Disable Touchpad=Touchpad Off
 Enable Touchpad=Touchpad On
 Show System Activity=Ctrl+Esc
-Switch keyboard layout to Spanish=none
 Switch keyboard layout to Spanish (Latin American)=none
 Switch to Next Keyboard Layout=Ctrl+Alt+K
 Toggle Touchpad=Touchpad Toggle
 display=Display; Meta+P
-
-[khotkeys][Global Shortcuts]
 {01460165-b685-4645-ae32-ed249903c3e2}=Meta+Shift+Print
+{0a00064c-9e74-42e5-a014-6fa7b8c3e78f}=none
+{1348a433-f212-4402-bf9f-5b9d62eaa161}=none
+{3480be6a-197e-478b-afd2-caf308036266}=none
 {390c6533-d916-4bb0-9159-295c912a8bfb}=Ctrl+Shift+A
+{3d8c565c-a082-4411-819c-eaa3beae5d30}=none
 {4af16aa3-f655-4a6d-ad10-76f02b69e58b}=Meta+Print
-{516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Print
+{516b5aee-8cf4-4330-86f9-46bea1baaf6b}=Meta+Ins
+{518dcbc1-2741-4eca-b84f-fcd04be19e30}=none
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
 {ed346e27-7b5c-447b-a23a-17f748de7a29}=Shift+Print
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
-decrease_volume=Ctrl+Shift+Down;\s
+decrease_volume=Ctrl+Shift+Down
 increase_microphone_volume=Microphone Volume Up
-increase_volume=Ctrl+Shift+Up;\s
+increase_volume=Ctrl+Shift+Up
 mic_mute=Microphone Mute
 mute=Volume Mute
 
@@ -197,7 +199,6 @@ activate task manager entry 6=none
 activate task manager entry 7=none
 activate task manager entry 8=none
 activate task manager entry 9=none
-activate widget 114=none
 clear-history=none
 clipboard_action=none
 cycleNextAction=none
@@ -245,8 +246,6 @@ activate task manager entry 6=Meta+6
 activate task manager entry 7=Meta+7
 activate task manager entry 8=Meta+8
 activate task manager entry 9=Meta+9
-activate widget 22=none
-activate widget 38=none
 clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
