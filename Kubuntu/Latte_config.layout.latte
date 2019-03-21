@@ -1,5 +1,5 @@
 [ActionPlugins][1]
-RightButton;NoModifier=org.kde.contextmenu
+RightButton;NoModifier=org.kde.latte.contextmenu
 
 [AppletGlobals][org.kde.plasma.notifications]
 popupPosition=0
@@ -23,7 +23,7 @@ immutability=1
 plugin=org.kde.discovernotifier
 
 [Containments][12][Applets][110][Configuration]
-PreloadWeight=7
+PreloadWeight=0
 
 [Containments][12][Applets][112]
 immutability=1
@@ -32,12 +32,19 @@ plugin=org.kde.plasma.devicenotifier
 [Containments][12][Applets][112][Configuration]
 PreloadWeight=0
 
+[Containments][12][Applets][120]
+immutability=1
+plugin=org.kde.plasma.keyboardindicator
+
+[Containments][12][Applets][120][Configuration]
+PreloadWeight=18
+
 [Containments][12][Applets][53]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][12][Applets][53][Configuration]
-PreloadWeight=68
+PreloadWeight=36
 
 [Containments][12][Applets][57]
 immutability=1
@@ -58,14 +65,15 @@ DialogHeight=619
 DialogWidth=945
 
 [Containments][12][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.discovernotifier,org.kde.plasma.devicenotifier
-hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect
-knownItems=org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.nomad.notifications,org.kde.plasma.vault,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.discovernotifier
+extraItems=org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.discovernotifier,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator
+hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect,Skype1
+knownItems=org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.nomad.notifications,org.kde.plasma.vault,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.discovernotifier,org.kde.plasma.keyboardindicator
 shownItems=org.kde.redshiftControl
 
 [Containments][13]
 activityId=
 dockWindowBehavior=true
+enableKWinEdges=true
 formfactor=2
 immutability=1
 lastScreen=10
@@ -142,7 +150,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][13][Applets][116][Configuration]
-PreloadWeight=53
+PreloadWeight=46
 
 [Containments][13][Applets][117]
 immutability=1
@@ -156,14 +164,14 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][13][Applets][118][Configuration]
-PreloadWeight=100
+PreloadWeight=84
 
 [Containments][13][Applets][119]
 immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][13][Applets][119][Configuration]
-PreloadWeight=23
+PreloadWeight=0
 
 [Containments][13][Applets][41]
 immutability=1
@@ -241,7 +249,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][13][Applets][44][Configuration]
-PreloadWeight=97
+PreloadWeight=94
 SystrayContainmentId=12
 
 [Containments][13][Applets][45]
@@ -262,7 +270,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][13][Applets][49][Configuration]
-PreloadWeight=62
+PreloadWeight=40
 
 [Containments][13][Applets][49][Configuration][Appearance]
 displayTimezoneAsCode=false
@@ -300,7 +308,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][13][Applets][80][Configuration]
-PreloadWeight=29
+PreloadWeight=22
 
 [Containments][13][Applets][91]
 immutability=1
@@ -321,7 +329,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][13][Applets][93][Configuration]
-PreloadWeight=92
+PreloadWeight=60
 
 [Containments][13][Applets][96]
 immutability=1
@@ -335,15 +343,15 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][99][Configuration]
-PreloadWeight=97
+PreloadWeight=65
 
 [Containments][13][Applets][99][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
 [Containments][13][ConfigDialog]
-DialogHeight=587
-DialogWidth=416
+DialogHeight=698
+DialogWidth=601
 
 [Containments][13][Configuration]
 PreloadWeight=0
@@ -353,7 +361,6 @@ activeIndicator=All
 advanced=true
 appletOrder=117;49;44;107;80;119;99;106;118;105;96;104;93;103;92;102;91;108;116;115
 autoDecreaseIconSize=false
-blurEnabled=false
 colorizeTransparentPanels=true
 disablePanelShadowForMaximized=true
 glow3D=true
@@ -363,18 +370,18 @@ iconSize=18
 lockedZoomApplets=117;107;119;106;105;104;103;102;108;115
 panelPosition=10
 panelSize=100
-panelTransparency=20
+panelTransparency=0
 shadowOpacity=10
 shadowSize=15
 solidBackgroundForMaximized=true
 splitterPosition=1
 splitterPosition2=3
-useThemePanel=false
 zoomLevel=0
 
 [Containments][14]
 activityId=
 dockWindowBehavior=true
+enableKWinEdges=true
 formfactor=2
 immutability=1
 lastScreen=10
@@ -417,8 +424,8 @@ isInLatteDock=true
 previewsDelay=150
 
 [Containments][14][ConfigDialog]
-DialogHeight=619
-DialogWidth=450
+DialogHeight=698
+DialogWidth=601
 
 [Containments][14][Configuration]
 PreloadWeight=0
@@ -440,19 +447,20 @@ lockedZoomApplets=69
 middleClickAction=ToggleMinimized
 modifierClickAction=CycleThroughTasks
 panelSize=95
-panelTransparency=50
+panelTransparency=0
 proportionIconSize=4.5
 shadowOpacity=20
 shadowSize=100
 shrinkThickMargins=false
+solidBackgroundForMaximized=true
 threeColorsWindows=true
-useThemePanel=false
 zoomLevel=5
 
 [LayoutSettings]
 activities=
-background=/home/michail/Εικόνες/various/blue-pattern5.jpg
+background=
 color=blue
+disableBordersForMaximizedWindows=false
 lastUsedActivity=
 launchers=
 showInMenu=true
