@@ -21,7 +21,7 @@ else
 	
 	notify-send AirPlay "Connected"
 
-	sleep 3
+	sleep 4
 
 	pactl -- set-sink-volume $new_out 20%
 
