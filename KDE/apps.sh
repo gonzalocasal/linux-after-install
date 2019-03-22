@@ -14,6 +14,13 @@ sudo apt install -y libnotify-bin
 sudo apt install -y notify-osd
 sleep 10
 
+echo "################################################################"
+echo "###################    ZSH   ######################"
+echo "################################################################"
+sudo apt install -y zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+sleep 10
 
 echo "################################################################"
 echo "###################  SLINGSCOLD ######################"
