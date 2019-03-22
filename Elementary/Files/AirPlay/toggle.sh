@@ -23,6 +23,8 @@ else
 
 	sleep 3
 
+	pactl -- set-sink-volume $new_out 20%
+
 	omnipause play
 	
 fi

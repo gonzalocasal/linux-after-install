@@ -2,11 +2,12 @@
 ###########################
 
 echo "################################################################"
-echo "###################    AirPlay  ######################"
+echo "###################    AIRPLAY  ######################"
 echo "################################################################"
-cd Files/AirPlayOmniPause/
+git clone https://github.com/mel00010/OmniPause.git
+cd OmniPause/
 sudo make install
-cd ../../..
+cd ..
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
 
