@@ -6,11 +6,11 @@ then
 	notify-send AirPlay "Disconnected"
 	pacmd unload-module module-raop-discover
 else
-	notify-send AirPlay "Connected"
+	notify-send AirPlay "Connecting"
 	pacmd load-module module-raop-discover
-	sleep 3
+	sleep 5
 	new_out=$(pacmd list-sinks | grep 'index: ' | sed 's/ //g' | sed 's/*//g' | sed 's/index://g' | tail -1 | awk '{print $1}')
 	echo $new_out
 	pacmd set-default-sink $new_out
-
+	notify-send AirPlay "Connected"
 fi
