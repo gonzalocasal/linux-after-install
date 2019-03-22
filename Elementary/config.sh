@@ -20,11 +20,18 @@ mkdir ~/.config/autostart/
 cp -R Files/Autostart/. ~/.config/autostart/
 
 echo "################################################################"
-echo "###################    USEFUL HOTKEYS  ######################"
+echo "###################    AIRPLAY  ######################"
 echo "################################################################"
+cd Files/AirPlayOmniPause/
+sudo make install
+cd ../../..
 cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
 
+
+echo "################################################################"
+echo "###################    USEFUL HOTKEYS  ######################"
+echo "################################################################"
 cp -a Files/Hotkeys/hotkeys.sh ~/.hotkeys.sh
 chmod +x ~/.hotkeys.sh
 
