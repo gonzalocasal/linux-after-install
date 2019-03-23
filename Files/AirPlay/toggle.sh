@@ -19,11 +19,11 @@ else
 	
 	pacmd move-sink-input $current_outputs $new_out
 	
-	notify-send AirPlay "Connected"
-
-	sleep 4
+	sleep 5
 
 	pactl -- set-sink-volume $new_out 20%
+
+	notify-send AirPlay "Connected"
 
 	omnipause play
 	
