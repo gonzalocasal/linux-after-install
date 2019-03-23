@@ -1,7 +1,0 @@
-#!/bin/sh
-
-sudo modprobe -r btusb
-sleep 1
-sudo service bluetooth restart
-sleep 1
-sudo modprobe btusb
