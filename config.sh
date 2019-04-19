@@ -4,19 +4,18 @@
 echo "################################################################"
 echo "###################    AIRPLAY  ######################"
 echo "################################################################"
-cd Files/AirPlay/OmniPause/
+cd Files/AirPlay
 sudo make install
-cd ..
 cp -a toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
-cd ../..
+cd ..
 
 echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
 echo "################################################################"
 sudo cp -a ~/Imágenes/Wallpapers/. /usr/share/wallpapers/
 sed -i -e '$a\' ~/.bashrc
-echo "alias walls='sudo rm -r /usr/share/wallpapers/*; sudo cp -a ~/Imágenes/Wallpapers/. /usr/share/wallpapers/;'" >> ~/.bashrc
+echo "alias walls='sudo -S <<< "PASS" rm -r /usr/share/wallpapers/*; sudo cp -a ~/Imágenes/Wallpapers/. /usr/share/wallpapers/;'" >> ~/.bashrc
 source ~/.bashrc
 
 echo "################################################################"
