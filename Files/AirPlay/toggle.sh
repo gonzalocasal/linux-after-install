@@ -10,21 +10,27 @@ else
 	omnipause pause
 	
 	pacmd load-module module-raop-discover
+
+	sleep 2
 	
 	new_out=$(pacmd list-sinks | grep 'index: ' | sed 's/ //g' | sed 's/*//g' | sed 's/index://g' | tail -1 | awk '{print $1}')
 
 	pacmd set-default-sink $new_out
 
+	sleep 2
+
 	current_outputs=$(pacmd list-sink-inputs | sed '/^[[:space:]]*$/d' | grep 'index: ' | tail -1 | awk '{print $2}')
 	
 	pacmd move-sink-input $current_outputs $new_out
 	
-	sleep 5
+	sleep 2
 
-	pactl -- set-sink-volume $new_out 20%
+	pactl -- set-sink-volume $new_out 35%
 
 	notify-send AirPlay "Connected"
 
 	omnipause play
+
+	pacmd set-default-sink $new_out
 	
 fi

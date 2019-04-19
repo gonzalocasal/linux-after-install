@@ -284,3 +284,12 @@ sudo add-apt-repository ppa:webupd8team/java --yes
 sudo apt update
 sudo apt install -y oracle-java8-installer
 sleep 10
+
+
+echo "################################################################"
+echo "###################    CLEANUP   ######################"
+echo "################################################################"
+sudo apt remove okular
+sudo apt remove gwenview
+sudo apt autoremove
+sudo apt clean

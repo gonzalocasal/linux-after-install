@@ -4,12 +4,12 @@
 echo "################################################################"
 echo "###################    AIRPLAY  ######################"
 echo "################################################################"
-git clone https://github.com/mel00010/OmniPause.git
-cd OmniPause/
+cd Files/AirPlay/OmniPause/
 sudo make install
 cd ..
-cp -a Files/AirPlay/toggle.sh ~/.toggle.sh
+cp -a toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
+cd ../..
 
 echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
@@ -31,14 +31,17 @@ echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashr
 source ~/.bashrc                               
 
 echo "################################################################"
-echo "###################    FN LOGITECH KEYBOARD   ######################"
+echo "###################    THEMES   ######################"
 echo "################################################################"
-sudo apt install -y gcc &&
-mkdir ~/.kconfig &&
-cd ~/.kconfig &&
-wget https://github.com/jergusg/k380-function-keys-conf/archive/v1.0.tar.gz &&
-tar -xvzf v1.0.tar.gz &&
-cd k380-function-keys-conf-1.0/ &&
-./build.sh &&
-sudo cp ~/.kconfig/k380-function-keys-conf-1.0/80-k380.rules /etc/udev/rules.d/ && sudo udevadm control --reload
+cp -a Files/Themes/. ~/.local/share/aurorae/themes/
 
+echo "################################################################"
+echo "###################    FONTS   ######################"
+echo "################################################################"
+sudo cp -a Files/Fonts/. /usr/share/fonts && sudo fc-cache -f -v
+
+
+echo "################################################################"
+echo "###################    SET AS WALLPAPER   ######################"
+echo "################################################################"
+~/.local/share/kservices5/ServiceMenus/
