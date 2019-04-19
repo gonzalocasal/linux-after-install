@@ -40,7 +40,8 @@ cp -a Files/Themes/. ~/.local/share/aurorae/themes/
 echo "################################################################"
 echo "###################    FONTS   ######################"
 echo "################################################################"
-sudo cp -a Files/Fonts/. /usr/share/fonts && sudo fc-cache -f -v
+mkdir ~/.local/fonts
+cp -a Files/Fonts/. ~/.local/fonts && sudo fc-cache -f -v
 
 echo "################################################################"
 echo "###################    SET AS WALLPAPER   ######################"
