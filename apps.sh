@@ -15,23 +15,6 @@ sudo apt install -y notify-osd
 sleep 10
 
 echo "################################################################"
-echo "###################    ZSH   ######################"
-echo "################################################################"
-sudo apt install -y zsh
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-chsh -s `which zsh`
-command -v zsh | sudo tee -a /etc/shells
-sudo chsh -s "$(command -v zsh)" "${USER}"
-sleep 10
-
-echo "################################################################"
-echo "###################  SLINGSCOLD ######################"
-echo "################################################################"
-sudo add-apt-repository ppa:noobslab/macbuntu --yes
-sudo apt update
-sudo apt -y install slingscold
-
-echo "################################################################"
 echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
@@ -209,6 +192,17 @@ sudo apt install -y meld
 sleep 10
 
 echo "################################################################"
+echo "###################    ZSH   ######################"
+echo "################################################################"
+sudo apt install -y zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+command -v zsh | sudo tee -a /etc/shells
+sudo chsh -s "$(command -v zsh)" "${USER}"
+sleep 10
+
+
+echo "################################################################"
 echo "###################    SUBLIME TEXT   ######################"
 echo "################################################################"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -289,7 +283,7 @@ sleep 10
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
 echo "################################################################"
-sudo apt remove okular
-sudo apt remove gwenview
+sudo apt remove -y  okular
+sudo apt remove -y gwenview
 sudo apt autoremove
 sudo apt clean

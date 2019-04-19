@@ -33,6 +33,8 @@ source ~/.bashrc
 echo "################################################################"
 echo "###################    THEMES   ######################"
 echo "################################################################"
+mkdir ~/.local/share/aurorae
+mkdir ~/.local/share/aurorae/themes
 cp -a Files/Themes/. ~/.local/share/aurorae/themes/
 
 echo "################################################################"
@@ -40,8 +42,14 @@ echo "###################    FONTS   ######################"
 echo "################################################################"
 sudo cp -a Files/Fonts/. /usr/share/fonts && sudo fc-cache -f -v
 
-
 echo "################################################################"
 echo "###################    SET AS WALLPAPER   ######################"
 echo "################################################################"
-~/.local/share/kservices5/ServiceMenus/
+mkdir ~/.local/share/kservices5
+mkdir ~/.local/share/kservices5/ServiceMenus
+cp -a Files/SetAsWallpaper.desktop ~/.local/share/kservices5/ServiceMenus/
+
+echo "################################################################"
+echo "###################   WINDOW SETTINGS   ######################"
+echo "################################################################"
+yes | cp Files/kwinrc  ~/.config/
