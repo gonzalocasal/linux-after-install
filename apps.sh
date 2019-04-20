@@ -19,7 +19,6 @@ echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
 
-
 echo "################################################################"
 echo "###################    EMBY   ######################"
 echo "################################################################"
@@ -72,7 +71,6 @@ sudo apt install -y -f
 rm skype*.deb
 sleep 10
 
-
 echo "################################################################"
 echo "###################    BITTORRENT   ######################"
 echo "################################################################"
@@ -84,7 +82,6 @@ echo "###################    UNRAR   ######################"
 echo "################################################################"
 sudo apt install -y unrar
 sleep 10
-
 
 echo "################################################################"
 echo "###################    GIMP   ######################"
@@ -109,8 +106,6 @@ sudo add-apt-repository --yes multiverse
 sudo apt update 
 sudo apt install -y steam
 sleep 10
-
-
 
 echo "################################################################"
 echo "###################    SPOTIFY   ######################"
@@ -201,7 +196,6 @@ command -v zsh | sudo tee -a /etc/shells
 sudo chsh -s "$(command -v zsh)" "${USER}"
 sleep 10
 
-
 echo "################################################################"
 echo "###################    SUBLIME TEXT   ######################"
 echo "################################################################"
@@ -229,13 +223,17 @@ sudo rm mailspring.deb
 sleep 10
 
 echo "################################################################"
+echo "###################   LATTE DOCK ######################"
+echo "################################################################"
+sudo apt install -y latte-dock
+
+echo "################################################################"
 echo "###################    PYTHON LOADER   ######################"
 echo "################################################################"
 wget http://mirrors.kernel.org/ubuntu/pool/main/libp/libpeas/libpeas-1.0-0-python3loader_1.16.0-1ubuntu2_amd64.deb
 sudo dpkg -i ./libpeas*.deb
 sudo rm libpeas*.deb
 sleep 10
-
 
 echo "################################################################"
 echo "###################    DBeaver   ######################"
@@ -264,7 +262,6 @@ wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file
 tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
 tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
 
-
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
 echo "################################################################"
@@ -278,7 +275,6 @@ sudo add-apt-repository ppa:webupd8team/java --yes
 sudo apt update
 sudo apt install -y oracle-java8-installer
 sleep 10
-
 
 echo "################################################################"
 echo "###################    CLEANUP   ######################"
