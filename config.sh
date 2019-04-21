@@ -19,15 +19,21 @@ echo "alias walls='sudo -S <<< "PASS" rm -r /usr/share/wallpapers/*; sudo cp -a 
 source ~/.bashrc
 
 echo "################################################################"
-echo "###################    DESKTOPS FILES   ######################"
-echo "################################################################"
-cp -a Files/Desktops/. ~/.local/share/applications/
-
-echo "################################################################"
 echo "###################    DLNA ALIAS   ######################"
 echo "################################################################"
 echo "alias dlna='sudo -S <<< "PASS" pulseaudio-dlna --encoder wav'" >> ~/.bashrc
-source ~/.bashrc                               
+source ~/.bashrc  
+
+echo "################################################################"
+echo "###################   JAVA FONTS ######################"
+echo "################################################################"
+echo "export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=[setting]'" >> ~/.bashrc
+source ~/.bashrc  
+
+echo "################################################################"
+echo "###################    DESKTOPS FILES   ######################"
+echo "################################################################"
+cp -a Files/Desktops/. ~/.local/share/applications/
 
 echo "################################################################"
 echo "###################    THEMES   ######################"
@@ -39,8 +45,8 @@ cp -a Files/Themes/. ~/.local/share/aurorae/themes/
 echo "################################################################"
 echo "###################    FONTS   ######################"
 echo "################################################################"
-mkdir ~/.local/fonts
-cp -a Files/Fonts/. ~/.local/fonts && sudo fc-cache -f -v
+mkdir ~/.fonts
+cp -a Files/Fonts/. ~/.fonts && sudo fc-cache -f -v
 
 echo "################################################################"
 echo "###################    SET AS WALLPAPER   ######################"
