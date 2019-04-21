@@ -59,4 +59,5 @@ echo "###################   LATTE CONFIG   ######################"
 echo "################################################################"
 cp Files/latte.sh  ~/.config/autostart/
 cp Files/latte.sh.desktop  ~/.config/autostart/
-latte-dock --import-layout Files/Latte_config.layout.latte
+latte-dock --import-layout Files/plasma_dark.layout
+latte-dock --import-layout Files/plasma_light.layout
