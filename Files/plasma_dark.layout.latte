@@ -96,11 +96,11 @@ PreloadWeight=0
 
 [Containments][123][Applets][124][Configuration][General]
 isInLatteDock=true
-launchers59=applications:google-chrome.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:rhythmbox.desktop,applications:sublime_text.desktop,applications:jetbrains-idea-ce.desktop,applications:Zoom.desktop,applications:skypeforlinux.desktop,applications:org.kde.konsole.desktop,applications:systemsettings.desktop
+launchers59=applications:google-chrome.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:rhythmbox.desktop,applications:sublime_text.desktop,applications:jetbrains-idea-ce.desktop,applications:Zoom.desktop,applications:skypeforlinux.desktop,applications:systemsettings.desktop,applications:org.kde.konsole.desktop
 
 [Containments][123][ConfigDialog]
-DialogHeight=698
-DialogWidth=601
+DialogHeight=662
+DialogWidth=570
 
 [Containments][123][Configuration]
 PreloadWeight=0
@@ -197,7 +197,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][13][Applets][116][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][13][Applets][116][Configuration][ConfigDialog]
 DialogHeight=540
@@ -213,7 +213,7 @@ immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][13][Applets][117][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][13][Applets][119]
 immutability=1
@@ -221,6 +221,25 @@ plugin=org.kde.latte.spacer
 
 [Containments][13][Applets][119][Configuration]
 PreloadWeight=0
+
+[Containments][13][Applets][125]
+immutability=1
+plugin=org.kde.plasma.kickoff
+
+[Containments][13][Applets][125][Configuration]
+PreloadWeight=100
+
+[Containments][13][Applets][125][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][13][Applets][125][Configuration][General]
+favoritesPortedToKAstats=true
+icon=/home/gonzalo/.transparent.png
+menuItems=oftenUsed:t,bookmark:t,application:t,computer:t,used:t,leave:f
+
+[Containments][13][Applets][125][Shortcuts]
+global=Meta+Space
 
 [Containments][13][Applets][41]
 immutability=1
@@ -298,7 +317,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][13][Applets][44][Configuration]
-PreloadWeight=7
+PreloadWeight=49
 SystrayContainmentId=12
 
 [Containments][13][Applets][45]
@@ -319,7 +338,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][13][Applets][49][Configuration]
-PreloadWeight=27
+PreloadWeight=71
 
 [Containments][13][Applets][49][Configuration][Appearance]
 displayTimezoneAsCode=false
@@ -357,7 +376,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][13][Applets][80][Configuration]
-PreloadWeight=27
+PreloadWeight=0
 
 [Containments][13][Applets][80][Configuration][ConfigDialog]
 DialogHeight=540
@@ -386,21 +405,21 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][13][Applets][93][Configuration]
-PreloadWeight=0
+PreloadWeight=9
 
 [Containments][13][Applets][96]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][13][Applets][96][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][13][Applets][99]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][99][Configuration]
-PreloadWeight=15
+PreloadWeight=28
 
 [Containments][13][Applets][99][Configuration][ConfigDialog]
 DialogHeight=540
@@ -417,7 +436,7 @@ PreloadWeight=0
 activeIndicator=All
 activeIndicatorType=DotIndicator
 advanced=true
-appletOrder=117;49;44;107;80;119;99;106;96;104;93;103;92;102;91;108;116;115
+appletOrder=117;125;49;44;107;80;119;99;106;96;104;93;103;92;102;91;108;116;115
 autoDecreaseIconSize=false
 colorizeTransparentPanels=true
 disablePanelShadowForMaximized=true
@@ -428,13 +447,13 @@ iconSize=20
 lockedZoomApplets=117;107;119;106;104;103;102;108;115
 panelPosition=10
 panelSize=100
-panelTransparency=30
+panelTransparency=60
 shadowColor=000000
 shadowOpacity=60
 shadowSize=25
 shrinkThickMargins=false
-splitterPosition=1
-splitterPosition2=3
+splitterPosition=2
+splitterPosition2=4
 zoomLevel=0
 
 [LayoutSettings]

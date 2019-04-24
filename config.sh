@@ -63,6 +63,7 @@ yes | cp Files/kwinrc  ~/.config/
 echo "################################################################"
 echo "###################   LATTE CONFIG   ######################"
 echo "################################################################"
+cp Files/transparent.png  ~/.transparent.png
 cp Files/latte.sh  ~/.config/autostart/
 cp Files/latte.sh.desktop  ~/.config/autostart/
 latte-dock --import-layout Files/plasma_dark.layout
