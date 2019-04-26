@@ -56,9 +56,11 @@ mkdir ~/.local/share/kservices5/ServiceMenus
 cp -a Files/SetAsWallpaper.desktop ~/.local/share/kservices5/ServiceMenus/
 
 echo "################################################################"
-echo "###################   WINDOW SETTINGS   ######################"
+echo "###################   SETTINGS   ######################"
 echo "################################################################"
 yes | cp Files/kwinrc  ~/.config/
+yes | cp Files/kglobalshortcutsrc  ~/.config/
+yes | cp Files/khotkeysrc  ~/.config/
 
 echo "################################################################"
 echo "###################   LATTE CONFIG   ######################"
