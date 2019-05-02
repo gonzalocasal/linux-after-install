@@ -1,6 +1,0 @@
- [Desktop Entry]
- Type=Application
- Exec=/home/gonzalo/.config/autostart/latte.sh
- Name=latte
- Comment=reload latte
-
