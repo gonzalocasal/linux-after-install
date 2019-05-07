@@ -20,7 +20,7 @@ wallpaperplugin=org.kde.image
 
 [Containments][12][Applets][40]
 immutability=1
-plugin=org.kde.plasma.printmanager
+plugin=org.kde.plasma.keyboardindicator
 
 [Containments][12][Applets][40][Configuration]
 PreloadWeight=0
@@ -41,21 +41,21 @@ PreloadWeight=5
 
 [Containments][12][Applets][43]
 immutability=1
-plugin=org.kde.plasma.notifications
+plugin=org.kde.kdeconnect
 
 [Containments][12][Applets][43][Configuration]
-PreloadWeight=35
+PreloadWeight=30
 
 [Containments][12][Applets][44]
 immutability=1
-plugin=org.kde.kdeconnect
+plugin=org.kde.plasma.notifications
 
 [Containments][12][Applets][44][Configuration]
-PreloadWeight=30
+PreloadWeight=35
 
 [Containments][12][Applets][45]
 immutability=1
-plugin=org.kde.plasma.keyboardindicator
+plugin=org.kde.plasma.printmanager
 
 [Containments][12][Applets][45][Configuration]
 PreloadWeight=0
@@ -142,31 +142,63 @@ wallpaperplugin=org.kde.image
 
 [Containments][14][Applets][46]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.plasma.mediacontroller
 
 [Containments][14][Applets][46][Configuration]
-PreloadWeight=0
+PreloadWeight=60
 
 [Containments][14][Applets][47]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.plasma.systemtray
 
 [Containments][14][Applets][47][Configuration]
-PreloadWeight=10
+PreloadWeight=100
+SystrayContainmentId=12
 
 [Containments][14][Applets][48]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.activeWindowControl
 
-[Containments][14][Applets][48][Configuration]
-PreloadWeight=0
+[Containments][14][Applets][48][Configuration][Appearance]
+autoFillWidth=true
+showControlButtons=false
+showWindowIcon=false
+showWindowTitle=false
+
+[Containments][14][Applets][48][Configuration][Behaviour]
+showForCurrentScreenOnly=true
+
+[Containments][14][Applets][48][Configuration][ConfigDialog]
+DialogHeight=824
+DialogWidth=1612
+
+[Containments][14][Applets][48][Configuration][MouseControl]
+wheelDownAction=2
+wheelUpMaximizes=true
 
 [Containments][14][Applets][49]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.activeWindowControl
 
-[Containments][14][Applets][49][Configuration]
-PreloadWeight=79
+[Containments][14][Applets][49][Configuration][Appearance]
+buttonSize=0.9
+buttonsDynamicWidth=true
+buttonsPosition=UpperRight
+buttonsStandalone=true
+buttonsVerticalCenter=true
+controlButtonsSpacing=5
+doNotHideControlButtons=true
+horizontalScreenWidthPercent=0.031
+iconAndTextSpacing=4
+showButtonOnlyWhenMaximized=true
+showMinimize=true
+showWindowIcon=false
+showWindowTitle=false
+widthFineTuning=-12
+
+[Containments][14][Applets][49][Configuration][ConfigDialog]
+DialogHeight=1005
+DialogWidth=1941
 
 [Containments][14][Applets][50]
 immutability=1
@@ -201,45 +233,30 @@ wheelUpMaximizes=true
 
 [Containments][14][Applets][51]
 immutability=1
-plugin=org.kde.activeWindowControl
-
-[Containments][14][Applets][51][Configuration][Appearance]
-buttonSize=0.9
-buttonsDynamicWidth=true
-buttonsPosition=UpperRight
-buttonsStandalone=true
-buttonsVerticalCenter=true
-controlButtonsSpacing=5
-doNotHideControlButtons=true
-horizontalScreenWidthPercent=0.031
-iconAndTextSpacing=4
-showButtonOnlyWhenMaximized=true
-showMinimize=true
-showWindowIcon=false
-showWindowTitle=false
-widthFineTuning=-12
+plugin=org.kde.comexpertise.plasma.kdeconnect.sms
 
 [Containments][14][Applets][51][Configuration][ConfigDialog]
-DialogHeight=1005
-DialogWidth=1941
+DialogHeight=1086
+DialogWidth=1476
+
+[Containments][14][Applets][51][Configuration][General]
+defaultCountryCallingCode=+30
+defaultDeviceName=CUBOT
+speakerBeep=50
 
 [Containments][14][Applets][52]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.battery
 
 [Containments][14][Applets][52][Configuration]
-PreloadWeight=60
+PreloadWeight=10
 
 [Containments][14][Applets][53]
 immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][53][Configuration]
-PreloadWeight=5
-
-[Containments][14][Applets][53][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+PreloadWeight=0
 
 [Containments][14][Applets][54]
 immutability=1
@@ -276,22 +293,17 @@ DialogWidth=1425
 
 [Containments][14][Applets][56]
 immutability=1
-plugin=org.kde.plasma.systemtray
+plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][56][Configuration]
-PreloadWeight=100
-SystrayContainmentId=12
+PreloadWeight=55
 
 [Containments][14][Applets][57]
 immutability=1
-plugin=org.kde.plasma.volume
+plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][57][Configuration]
-PreloadWeight=100
-
-[Containments][14][Applets][57][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+PreloadWeight=0
 
 [Containments][14][Applets][58]
 immutability=1
@@ -299,130 +311,121 @@ plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][59]
 immutability=1
-plugin=org.kde.comexpertise.plasma.kdeconnect.sms
+plugin=org.kde.plasma.kickoff
+
+[Containments][14][Applets][59][Configuration]
+PreloadWeight=100
 
 [Containments][14][Applets][59][Configuration][ConfigDialog]
-DialogHeight=1086
-DialogWidth=1476
+DialogHeight=540
+DialogWidth=720
 
 [Containments][14][Applets][59][Configuration][General]
-defaultCountryCallingCode=+30
-defaultDeviceName=CUBOT
-speakerBeep=50
+favoritesPortedToKAstats=true
+icon=/home/gonzalo/.transparent.png
+menuItems=oftenUsed:t,bookmark:t,application:t,computer:t,used:t,leave:f
+
+[Containments][14][Applets][59][Shortcuts]
+global=Meta+Space
 
 [Containments][14][Applets][60]
 immutability=1
-plugin=org.kde.plasma.networkmanagement
+plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][60][Configuration]
-PreloadWeight=10
-
-[Containments][14][Applets][60][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+PreloadWeight=0
 
 [Containments][14][Applets][61]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.plasma.networkmanagement
 
 [Containments][14][Applets][61][Configuration]
-PreloadWeight=5
+PreloadWeight=10
+
+[Containments][14][Applets][61][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][14][Applets][62]
 immutability=1
-plugin=org.kde.activeWindowControl
+plugin=org.kde.latte.spacer
 
-[Containments][14][Applets][62][Configuration][Appearance]
-autoFillWidth=true
-showControlButtons=false
-showWindowIcon=false
-showWindowTitle=false
-
-[Containments][14][Applets][62][Configuration][Behaviour]
-showForCurrentScreenOnly=true
-
-[Containments][14][Applets][62][Configuration][ConfigDialog]
-DialogHeight=824
-DialogWidth=1612
-
-[Containments][14][Applets][62][Configuration][MouseControl]
-wheelDownAction=2
-wheelUpMaximizes=true
+[Containments][14][Applets][62][Configuration]
+PreloadWeight=5
 
 [Containments][14][Applets][63]
 immutability=1
-plugin=org.kde.weatherWidget
+plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][63][Configuration]
-PreloadWeight=100
-
-[Containments][14][Applets][63][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][14][Applets][63][Configuration][General]
-lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556686864408,"cache_61e4092e1a8aaa1866b2781f182c1779":1556800175391}
-places=[{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/La_Plata","placeAlias":"La Plata"},{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/Tres_Arroyos","placeAlias":"Tres Arroyos"}]
-reloadIntervalMin=30
-
-[Containments][14][Applets][63][Configuration][Units]
-windSpeedType=2
+PreloadWeight=10
 
 [Containments][14][Applets][64]
 immutability=1
-plugin=org.kde.latte.spacer
-
-[Containments][14][Applets][64][Configuration]
-PreloadWeight=0
-
-[Containments][14][Applets][65]
-immutability=1
-plugin=org.kde.plasma.battery
-
-[Containments][14][Applets][65][Configuration]
-PreloadWeight=10
-
-[Containments][14][Applets][66]
-immutability=1
 plugin=org.kde.plasma.userswitcher
 
-[Containments][14][Applets][66][Configuration]
+[Containments][14][Applets][64][Configuration]
 PreloadWeight=60
 
-[Containments][14][Applets][66][Configuration][ConfigDialog]
+[Containments][14][Applets][64][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][14][Applets][66][Configuration][General]
+[Containments][14][Applets][64][Configuration][General]
 showFace=true
 showFullName=false
 showName=false
 
+[Containments][14][Applets][65]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][14][Applets][65][Configuration]
+PreloadWeight=100
+
+[Containments][14][Applets][65][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][14][Applets][66]
+immutability=1
+plugin=org.kde.plasma.bluetooth
+
+[Containments][14][Applets][66][Configuration]
+PreloadWeight=79
+
 [Containments][14][Applets][67]
 immutability=1
-plugin=org.kde.plasma.kickoff
+plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][67][Configuration]
-PreloadWeight=100
+PreloadWeight=5
 
 [Containments][14][Applets][67][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][14][Applets][67][Configuration][General]
-favoritesPortedToKAstats=true
-icon=/home/gonzalo/.transparent.png
-menuItems=oftenUsed:t,bookmark:t,application:t,computer:t,used:t,leave:f
-
-[Containments][14][Applets][67][Shortcuts]
-global=Meta+Space
-
 [Containments][14][Applets][68]
 immutability=1
-plugin=org.kde.latte.spacer
+plugin=org.kde.weatherWidget
 
 [Containments][14][Applets][68][Configuration]
-PreloadWeight=55
+PreloadWeight=100
+
+[Containments][14][Applets][68][Configuration][Appearance]
+renderMeteogram=true
+
+[Containments][14][Applets][68][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][14][Applets][68][Configuration][General]
+lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556686864408,"cache_61e4092e1a8aaa1866b2781f182c1779":1557225702100}
+places=[{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/La_Plata","placeAlias":"La Plata"},{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/Tres_Arroyos","placeAlias":"Tres Arroyos"}]
+reloadIntervalMin=30
+
+[Containments][14][Applets][68][Configuration][Units]
+windSpeedType=2
 
 [Containments][14][ConfigDialog]
 DialogHeight=665
@@ -435,7 +438,7 @@ PreloadWeight=0
 activeIndicator=All
 activeIndicatorType=DotIndicator
 advanced=true
-appletOrder=67;54;56;46;63;68;52;47;57;48;49;61;60;64;65;58;66;53
+appletOrder=59;54;47;57;68;56;46;63;65;53;66;62;61;60;52;58;64;67
 autoDecreaseIconSize=false
 colorizeTransparentPanels=true
 disablePanelShadowForMaximized=true
@@ -443,7 +446,7 @@ glow3D=true
 glowOption=OnActive
 iconMargin=35
 iconSize=20
-lockedZoomApplets=46;47;48;61;64;53
+lockedZoomApplets=57;63;53;62;60;67
 panelPosition=10
 panelSize=100
 panelTransparency=60
