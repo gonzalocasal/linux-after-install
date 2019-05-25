@@ -23,14 +23,14 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][12][Applets][40][Configuration]
-PreloadWeight=15
+PreloadWeight=0
 
 [Containments][12][Applets][41]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][12][Applets][41][Configuration]
-PreloadWeight=20
+PreloadWeight=0
 
 [Containments][12][Applets][42]
 immutability=1
@@ -51,22 +51,43 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][12][Applets][44][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][12][Applets][45]
 immutability=1
 plugin=org.kde.discovernotifier
 
 [Containments][12][Applets][45][Configuration]
-PreloadWeight=10
+PreloadWeight=0
+
+[Containments][12][Applets][70]
+immutability=1
+plugin=touchpad
+
+[Containments][12][Applets][70][Configuration]
+PreloadWeight=42
+
+[Containments][12][Applets][71]
+immutability=1
+plugin=org.kde.plasma.clipboard
+
+[Containments][12][Applets][71][Configuration]
+PreloadWeight=42
+
+[Containments][12][Applets][72]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][12][Applets][72][Configuration]
+PreloadWeight=42
 
 [Containments][12][ConfigDialog]
 DialogHeight=619
 DialogWidth=945
 
 [Containments][12][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.discovernotifier,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator
-hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect,Skype1,org.kde.discovernotifier
+extraItems=org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.discovernotifier,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,touchpad
+hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect,Skype1,org.kde.discovernotifier,touchpad,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller
 knownItems=org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.nomad.notifications,org.kde.plasma.vault,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.discovernotifier,org.kde.plasma.keyboardindicator
 shownItems=org.kde.redshiftControl
 
@@ -192,21 +213,21 @@ immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][49][Configuration]
-PreloadWeight=25
+PreloadWeight=0
 
 [Containments][14][Applets][50]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][14][Applets][50][Configuration]
-PreloadWeight=100
+PreloadWeight=68
 
 [Containments][14][Applets][51]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][14][Applets][51][Configuration]
-PreloadWeight=100
+PreloadWeight=73
 
 [Containments][14][Applets][51][Configuration][ConfigDialog]
 DialogHeight=540
@@ -217,7 +238,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][14][Applets][52][Configuration]
-PreloadWeight=100
+PreloadWeight=73
 
 [Containments][14][Applets][52][Configuration][ConfigDialog]
 DialogHeight=540
@@ -235,7 +256,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][14][Applets][53][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][14][Applets][53][Configuration][ConfigDialog]
 DialogHeight=540
@@ -246,28 +267,28 @@ immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][54][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][14][Applets][55]
 immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][55][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][14][Applets][56]
 immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][56][Configuration]
-PreloadWeight=55
+PreloadWeight=23
 
 [Containments][14][Applets][57]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][14][Applets][57][Configuration]
-PreloadWeight=100
+PreloadWeight=73
 
 [Containments][14][Applets][57][Configuration][Appearance]
 displayTimezoneAsCode=false
@@ -291,22 +312,15 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][14][Applets][59][Configuration]
-PreloadWeight=100
+PreloadWeight=73
 SystrayContainmentId=12
-
-[Containments][14][Applets][60]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
-
-[Containments][14][Applets][60][Configuration]
-PreloadWeight=75
 
 [Containments][14][Applets][61]
 immutability=1
 plugin=org.kde.latte.spacer
 
 [Containments][14][Applets][61][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][14][Applets][62]
 immutability=1
@@ -329,13 +343,6 @@ DialogWidth=1612
 wheelDownAction=2
 wheelUpMaximizes=true
 
-[Containments][14][Applets][63]
-immutability=1
-plugin=org.kde.latte.spacer
-
-[Containments][14][Applets][63][Configuration]
-PreloadWeight=10
-
 [Containments][14][Applets][64]
 immutability=1
 plugin=org.kde.latte.spacer
@@ -348,7 +355,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][14][Applets][65][Configuration]
-PreloadWeight=35
+PreloadWeight=18
 
 [Containments][14][Applets][65][Configuration][ConfigDialog]
 DialogHeight=540
@@ -364,14 +371,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][14][Applets][66][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][14][Applets][67]
 immutability=1
 plugin=org.kde.weatherWidget
 
 [Containments][14][Applets][67][Configuration]
-PreloadWeight=100
+PreloadWeight=73
 
 [Containments][14][Applets][67][Configuration][Appearance]
 inTrayActiveTimeoutSec=10
@@ -382,7 +389,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][14][Applets][67][Configuration][General]
-lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556687231907,"cache_61e4092e1a8aaa1866b2781f182c1779":1558700921188,"cache_fac3594c6c4ba07afac3dc48db8b7b85":1558362293366}
+lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556687231907,"cache_61e4092e1a8aaa1866b2781f182c1779":1558807225983,"cache_fac3594c6c4ba07afac3dc48db8b7b85":1558362293366}
 places=[{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/La_Plata","placeAlias":"La Plata"},{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/Tres_Arroyos","placeAlias":"Tres Arroyos"}]
 reloadIntervalMin=30
 
@@ -427,8 +434,8 @@ DialogHeight=1005
 DialogWidth=1941
 
 [Containments][14][ConfigDialog]
-DialogHeight=665
-DialogWidth=573
+DialogHeight=698
+DialogWidth=601
 
 [Containments][14][Configuration]
 PreloadWeight=0
@@ -437,7 +444,7 @@ PreloadWeight=0
 activeIndicator=All
 activeIndicatorType=DotIndicator
 advanced=true
-appletOrder=52;57;59;49;67;56;60;63;51;55;50;64;53;61;66;54;65;58
+appletOrder=52;57;59;49;67;56;51;55;50;64;53;61;66;54;65;58
 autoDecreaseIconSize=false
 colorizeTransparentPanels=true
 durationTime=x1
