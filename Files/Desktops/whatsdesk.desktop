@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Whatsapp
+Comment=whatsapp client for linux 
+Exec="/opt/whatsdesk/whatsdesk" %U
+Terminal=false
+Type=Application
+Icon=/home/gonzalo/Imágenes/Iconos/whatsapp.png
+StartupWMClass=whatsdesk
+Categories=Network;
