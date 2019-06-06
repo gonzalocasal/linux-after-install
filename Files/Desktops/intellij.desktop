@@ -2,9 +2,8 @@
 Version=1.0
 Type=Application
 Name=IntelliJ IDEA Community Edition
-Icon=/home/gonzalo/Imágenes/Iconos/spotify.png
-Exec="/home/gonzalo/Programas/IntelliJ/idea-IC-183.5429.30/bin/idea.sh" %f
+Icon=/home/gonzalo/Imágenes/Iconos/IntelliJ3.png
+Exec="/home/gonzalo/Programas/IntelliJ/idea-IC-183.5429.30/bin/idea.sh"
 Comment=Capable and Ergonomic IDE for JVM
 Categories=Development;IDE;
 Terminal=false
-StartupWMClass=jetbrains-idea-ce

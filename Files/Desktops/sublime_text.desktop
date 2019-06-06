@@ -1,12 +1,3 @@
-[Desktop Action Document]
-Exec=/opt/sublime_text/sublime_text --command new_file
-Name=New File
-OnlyShowIn=Unity;
-
-[Desktop Action Window]
-Exec=/opt/sublime_text/sublime_text -n
-Name=New Window
-OnlyShowIn=Unity;
 
 [Desktop Entry]
 Actions=Window;Document;
@@ -18,11 +9,19 @@ Icon=/home/gonzalo/Imágenes/Iconos/sublime.png
 MimeType=text/plain;
 Name=Sublime Text
 NoDisplay=false
-Path[$e]=
 StartupNotify=true
 Terminal=0
-TerminalOptions=
 Type=Application
 Version=1.0
 X-KDE-SubstituteUID=false
 X-KDE-Username=
+
+[Desktop Action Document]
+Exec=/opt/sublime_text/sublime_text --command new_file
+Name=New File
+OnlyShowIn=Unity;
+
+[Desktop Action Window]
+Exec=/opt/sublime_text/sublime_text -n
+Name=New Window
+OnlyShowIn=Unity;

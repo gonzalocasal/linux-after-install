@@ -3,7 +3,7 @@
 Type=Application
 # Eat URLs to avoid downloading large music files but JuK does not yet support them
 Exec=juk %U
-Icon=/home/gonzalo/Imágenes/Iconos/youtube_music.png
+Icon=/home/gonzalo/Imágenes/Iconos/musica.png
 X-DocPath=juk/index.html
 X-DBUS-StartupType=Unique
 Comment=
