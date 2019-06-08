@@ -116,22 +116,11 @@ sudo apt update
 sudo apt install spotify-client -y
 sleep 10
 
-echo "################################################################"
-echo "###################    RHYTHMBOX   ######################"
-echo "################################################################"
-sudo apt install -y rhythmbox
-sleep 10
-sudo add-apt-repository --yes ppa:fossfreedom/rhythmbox-plugins
-sudo apt update
-sudo apt install -y rhythmbox-plugin-alternative-toolbar
-sleep 10
-sudo apt install -y rhythmbox-plugin-close-on-hide
-sleep 10
 
 echo "################################################################"
-echo "###################    JUK   ######################"
+echo "###################    CLEMENTINE   ######################"
 echo "################################################################"
-sudo apt install -y juk
+sudo apt install -y clementine
 sleep 10
 
 

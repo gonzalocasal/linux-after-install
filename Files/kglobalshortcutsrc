@@ -5,7 +5,45 @@ switch-to-activity-27df7748-5694-44fa-8e8a-b64f3424d1ce=none,none,Cambiar a la a
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to Spanish (Latin American)=none,none,Cambiar la distribución del teclado a Spanish (Latin American)
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Cambiar a la siguiente distribución del teclado
-_k_friendly_name=KDE Daemon
+_k_friendly_name=Preferencias del sistema
+
+[amarok]
+_k_friendly_name=Amarok
+decreaseVolume=,Meta+-,Bajar el volumen
+increaseVolume=Meta++,Meta++,Subir el volumen
+loveTrack=Meta+L,Meta+L,Last.fm: Preferir pista actual
+mute=,Meta+M,Silenciar volumen
+next=none,none,Pista siguiente
+play_pause=none,none,Reproducir/Pausa
+playlist_add=,Meta+A,Añadir medio...
+prev=none,none,Pista anterior
+rate1=,Meta+1,Valorar pista actual: 1
+rate2=,Meta+2,Valorar pista actual: 2
+rate3=,Meta+3,Valorar pista actual: 3
+rate4=,Meta+4,Valorar pista actual: 4
+rate5=,Meta+5,Valorar pista actual: 5
+replay=none,none,Reiniciar pista actual
+seek_backward_medium=Meta+Shift+-,Meta+Shift+-,Retroceder por 10 seconds
+seek_forward_medium=Meta+Shift++,Meta+Shift++,Avanzar por 10 seconds
+showNotificationPopup=Meta+O,Meta+O,Mostrar ventana emergente de notificaciones
+skipTrack=,Meta+S,Last.fm: Saltar pista actual
+stop=none,none,Detener
+stop_after_current=Meta+Shift+V,Meta+Shift+V,Detener después de la pista actual
+toggleMainWindow=none,none,Conmutar la ventana principal
+
+[juk]
+_k_friendly_name=JuK
+back=Media Previous,Media Previous,Anterior
+forward=Media Next,Media Next,Siguiente
+forwardAlbum=Ctrl+Media Next,Ctrl+Media Next,Reproducir el siguiente álbum
+mute=,Volume Mute,Silenciar
+playPause=Media Play,Media Play,Reproducir / Pausar
+seekBack=Shift+Media Previous,Shift+Media Previous,Buscar hacia atrás
+seekForward=Shift+Media Next,Shift+Media Next,Buscar hacia delante
+showHide=none,none,Mostrar / Ocultar
+stop=,Media Stop,Detener
+volumeDown=Volume Down,Volume Down,Bajar el volumen
+volumeUp=Volume Up,Volume Up,Subir el volumen
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Activar o desactivar el lector de pantalla
@@ -23,7 +61,7 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Cambiar pantalla
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
+_k_friendly_name=Preferencias del sistema
 {01460165-b685-4645-ae32-ed249903c3e2}=,none,Take Rectangular Region Screenshot
 {1a0e5fb8-213f-48b6-b4fd-4cc31b8401b0}=Meta+Shift+Print,none,Hacer una captura de una región rectangular
 {30bac7be-1a1c-4466-99af-2091f93544c9}=none,none,Search
@@ -68,7 +106,7 @@ ExposeClass=Ctrl+F7,Ctrl+F7,Conmutar las ventanas presentes (clase de ventana)
 Increase Opacity=,none,Incrementar opacidad de la ventana activa en un 5 %
 Invert Screen Colors=,none,Invertir los colores de la pantalla
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Matar la ventana
-MinimizeAll=Meta+D,none,MinimizeAll
+MinimizeAll=none,none,MinimizeAll
 MoveMouseToCenter=Meta+F6,Meta+F6,Mover el ratón hacia el centro
 MoveMouseToFocus=Meta+F5,Meta+F5,Mover el ratón hacia el foco
 MoveZoomDown=Meta+Ctrl+Down,none,Mover el área ampliada hacia abajo
@@ -146,7 +184,7 @@ Window Lower=,none,Mover la ventana hacia atrás
 Window Maximize=Meta+Up,Meta+PgUp,Maximizar la ventana
 Window Maximize Horizontal=,none,Maximizar la ventana horizontalmente
 Window Maximize Vertical=,none,Maximizar la ventana verticalmente
-Window Minimize=Meta+M,Meta+PgDown,Minimizar la ventana
+Window Minimize=Meta+D,Meta+PgDown,Minimizar la ventana
 Window Move=,none,Mover la ventana
 Window No Border=Meta+B,none,Ocultar el borde de la ventana
 Window On All Desktops=,none,Mantener la ventana en todos los escritorios
@@ -230,7 +268,7 @@ activate entry 6=,Meta+6,Activar la entrada 6
 activate entry 7=,Meta+7,Activar la entrada 7
 activate entry 8=,Meta+8,Activar la entrada 8
 activate entry 9=,Meta+9,Activar la entrada 9
-activate widget 50=Meta+Space,none,Activar el elemento gráfico Lanzador de aplicaciones
+activate widget 54=Meta+Space,none,Activar el elemento gráfico Lanzador de aplicaciones
 clear-history=,none,Borrar historial del portapapeles
 clipboard_action=,Ctrl+Alt+X,Habilitar las acciones del portapapeles
 cycleNextAction=,none,Siguiente elemento del historial
