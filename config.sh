@@ -58,9 +58,14 @@ cp -a Files/SetAsWallpaper.desktop ~/.local/share/kservices5/ServiceMenus/
 echo "################################################################"
 echo "###################   SETTINGS   ######################"
 echo "################################################################"
-yes | cp Files/kwinrc  ~/.config/
-yes | cp Files/kglobalshortcutsrc  ~/.config/
-yes | cp Files/khotkeysrc  ~/.config/
+yes | cp Files/Config/kwinrc  ~/.config/
+yes | cp Files/Config/kglobalshortcutsrc  ~/.config/
+yes | cp Files/Config/khotkeysrc  ~/.config/
+
+echo "################################################################"
+echo "###################   CLEMENTINE   ######################"
+echo "################################################################"
+yes | cp Files/Config/Clementine.conf  ~/.config/Clementine/
 
 echo "################################################################"
 echo "###################   LATTE CONFIG   ######################"
