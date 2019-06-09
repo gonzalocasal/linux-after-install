@@ -15,6 +15,12 @@ sudo apt install -y notify-osd
 sleep 10
 
 echo "################################################################"
+echo "###################    SAMBA   ######################"
+echo "################################################################"
+sudo apt install -y samba kdenetwork-filesharing
+sleep 10
+
+echo "################################################################"
 echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
@@ -252,11 +258,9 @@ echo "###################    INTELLIJ ######################"
 echo "################################################################"
 mkdir ~/Programas
 mkdir ~/Programas/IntelliJ
-mkdir ~/Programas/IntelliJ/jdk
-wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2018.3.4.tar.gz
-wget -O jdk.tar.gz https://bintray.com/jetbrains/intellij-jdk/download_file?file_path=jbsdk8u112b783_linux_x64.tar.gz
-tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ
-tar -zxf jdk.tar.gz -C ~/Programas/IntelliJ/jdk
+wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2019.1.3.tar.gz
+tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ --strip-components 1
+
 
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"
