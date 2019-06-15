@@ -48,7 +48,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][12][Applets][43][Configuration]
-PreloadWeight=72
+PreloadWeight=82
 
 [Containments][12][Applets][44]
 immutability=1
@@ -91,7 +91,7 @@ DialogWidth=945
 
 [Containments][12][General]
 extraItems=org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.discovernotifier,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,touchpad,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller
-hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect,Skype1,org.kde.discovernotifier,touchpad,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,whatsdesk1
+hiddenItems=MEGAsync,org.kde.plasma.weather,zoom,org.kde.kdeconnect,Skype1,org.kde.discovernotifier,touchpad,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,whatsdesk1,org.kde.plasma.notifications
 knownItems=org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.nomad.notifications,org.kde.plasma.vault,org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.mediacontroller,org.kde.discovernotifier,org.kde.plasma.keyboardindicator
 shownItems=org.kde.redshiftControl
 
@@ -136,22 +136,23 @@ activeIndicatorType=DotIndicator
 advanced=true
 appletOrder=49
 autoDecreaseIconSize=false
-durationTime=None
+durationTime=x1
 glowOpacity=80
 glowOption=OnActive
 iconMargin=100
-iconSize=44
+iconSize=48
 indicateAudioStreams=false
 modifier=Meta
 modifierClickAction=NewInstance
 panelSize=100
-panelTransparency=5
+panelTransparency=50
 shadowColor=000000
 shadowOpacity=60
 shrinkThickMargins=false
 smartLaunchersEnabled=false
 threeColorsWindows=true
 titleTooltips=false
+useThemePanel=false
 zoomLevel=0
 
 [Containments][14]
@@ -312,7 +313,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][14][Applets][58][Configuration]
-PreloadWeight=57
+PreloadWeight=62
 
 [Containments][14][Applets][58][Configuration][ConfigDialog]
 DialogHeight=540
@@ -340,7 +341,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][14][Applets][60][Configuration][General]
-lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556686864408,"cache_61e4092e1a8aaa1866b2781f182c1779":1560579021583}
+lastReloadedMsJson={"cache_5a5440a6c6026f3e61c6aee598cae8dc":1556686864408,"cache_61e4092e1a8aaa1866b2781f182c1779":1560586239166}
 places=[{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/La_Plata","placeAlias":"La Plata"},{"providerId":"yrno","placeIdentifier":"Argentina/Buenos_Aires/Tres_Arroyos","placeAlias":"Tres Arroyos"}]
 reloadIntervalMin=30
 
@@ -447,7 +448,7 @@ immutability=1
 plugin=org.kde.plasma.inlineBattery
 
 [Containments][14][Applets][71][Configuration]
-PreloadWeight=70
+PreloadWeight=100
 
 [Containments][14][Applets][71][Configuration][ConfigDialog]
 DialogHeight=540
@@ -457,8 +458,9 @@ DialogWidth=720
 alignLeft=false
 fontSize=11
 iconHeight=10
-iconWidth=18
-padding=3
+iconWidth=19
+padding=7
+showPercentage=false
 
 [Containments][14][ConfigDialog]
 DialogHeight=665
@@ -483,8 +485,8 @@ lockedZoomApplets=59;67;64;68;50;63
 panelPosition=10
 panelSize=100
 shadowColor=ffffff
-shadowOpacity=45
-shadowSize=20
+shadowOpacity=20
+shadowSize=5
 shrinkThickMargins=false
 splitterPosition=1
 splitterPosition2=3
