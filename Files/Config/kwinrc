@@ -73,7 +73,6 @@ AutoRaiseInterval=750
 AutogroupInForeground=true
 AutogroupSimilarWindows=false
 BorderSnapZone=10
-BorderlessMaximizedWindows=true
 CenterSnapZone=0
 ClickRaise=true
 DelayFocusInterval=300
@@ -103,7 +102,8 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 BorderSize=Tiny
 ButtonsOnLeft=
-ButtonsOnRight=HIAX
+ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=false
+ShowToolTips=true
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__EvolvereLightPure
