@@ -1,32 +1,10 @@
-[Desktop Action NewTab]
-Exec=konsole --new-tab
-Name[es_AR]=Abrir una nueva pestaña
-Name=Open a New Tab
-
-[Desktop Action NewWindow]
-Exec=konsole
-Name[es_AR]=Abrir una nueva ventana
-Name=Open a New Window
-
 [Desktop Entry]
-Actions=NewWindow;NewTab;
-Categories=Qt;KDE;System;TerminalEmulator;
-Comment=Acceso a la línea de órdenes
-Exec=konsole
-GenericName[es_AR]=Terminal
-GenericName=Terminal
-Icon=/home/gonzalo/Imágenes/Iconos/terminal.png
-Name[es_AR]=Konsole
-Name=Konsole
-NoDisplay=false
-Path[$e]=
-StartupNotify=true
-Terminal=0
-TerminalOptions=
-TryExec=konsole
+Version=1.0
 Type=Application
-X-DBUS-StartupType=Unique
-X-DocPath=konsole/index.html
-X-KDE-AuthorizeAction=shell_access
-X-KDE-SubstituteUID=false
-X-KDE-Username=
+Name=Konsole
+Icon=/home/gonzalo/Imágenes/Iconos/terminal.png
+Exec=konsole %U
+Comment=Konsole
+Categories=Qt;KDE;System;TerminalEmulator;
+Terminal=false
+StartupWMClass=konsole
