@@ -3,6 +3,7 @@ _k_friendly_name=Gestor de actividades
 switch-to-activity-27df7748-5694-44fa-8e8a-b64f3424d1ce=none,none,Cambiar a la actividad «Por omisión»
 
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (US)=none,none,Cambiar la distribución del teclado a English (US)
 Switch keyboard layout to Spanish (Latin American)=none,none,Cambiar la distribución del teclado a Spanish (Latin American)
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Cambiar a la siguiente distribución del teclado
 _k_friendly_name=KDE Daemon
@@ -15,7 +16,7 @@ _k_friendly_name=Accesibilidad
 Disable Touchpad=Touchpad Off,Touchpad Off,Desactivar el panel táctil
 Enable Touchpad=Touchpad On,Touchpad On,Activar el panel táctil
 Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Conmutar el panel táctil
-_k_friendly_name=KDE Daemon
+_k_friendly_name=Preferencias del sistema
 
 [kded5]
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Mostrar la actividad del sistema
@@ -124,6 +125,8 @@ Switch to Screen 5=,none,Cambiar a la pantalla 5
 Switch to Screen 6=,none,Cambiar a la pantalla 6
 Switch to Screen 7=,none,Cambiar a la pantalla 7
 Toggle Window Raise/Lower=,none,Conmutar pasar la ventana al frente/atrás
+ToggleCurrentThumbnail=Meta+Ctrl+T,Meta+Ctrl+T,Conmutar la miniatura de la ventana actual
+ToggleMouseClick=Meta+*,Meta+*,Conmutar el efecto de pulsación del ratón
 TrackMouse=none,none,Seguir el ratón
 Walk Through Desktop List=,none,Recorrer la lista de escritorios
 Walk Through Desktop List (Reverse)=,none,Recorrer la lista escritorios (hacia atrás)
@@ -150,7 +153,7 @@ Window Maximize=Meta+Up,Meta+PgUp,Maximizar la ventana
 Window Maximize Horizontal=,none,Maximizar la ventana horizontalmente
 Window Maximize Vertical=,none,Maximizar la ventana verticalmente
 Window Minimize=Meta+D,Meta+PgDown,Minimizar la ventana
-Window Move=,none,Mover la ventana
+Window Move=Meta+X,none,Mover la ventana
 Window No Border=Meta+B,none,Ocultar el borde de la ventana
 Window On All Desktops=,none,Mantener la ventana en todos los escritorios
 Window One Desktop Down=,none,Ventana al escritorio inferior
@@ -233,7 +236,7 @@ activate entry 6=,Meta+6,Activar la entrada 6
 activate entry 7=,Meta+7,Activar la entrada 7
 activate entry 8=,Meta+8,Activar la entrada 8
 activate entry 9=,Meta+9,Activar la entrada 9
-activate widget 69=Meta+Space,none,Activar el elemento gráfico Lanzador de aplicaciones
+activate widget 65=Meta+Space,none,Activar el elemento gráfico Lanzador de aplicaciones
 clear-history=,none,Borrar historial del portapapeles
 clipboard_action=,Ctrl+Alt+X,Habilitar las acciones del portapapeles
 cycleNextAction=,none,Siguiente elemento del historial

@@ -51,6 +51,7 @@ CommandWindow3=Activate and pass click
 CommandWindowWheel=Scroll
 
 [Plugins]
+diminactiveEnabled=true
 enforcedecoEnabled=true
 glideEnabled=true
 kwin4_effect_fadeEnabled=false
@@ -102,7 +103,7 @@ WindowSnapZone=10
 
 [org.kde.kdecoration2]
 BorderSize=None
-ButtonsOnLeft=
+ButtonsOnLeft=S
 ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=true
