@@ -9,6 +9,7 @@ sudo make install
 cp -a toggle.sh ~/.toggle.sh
 chmod +x ~/.toggle.sh
 cd ..
+cd ..
 
 echo "################################################################"
 echo "###################    WALLPAPERS   ######################"
