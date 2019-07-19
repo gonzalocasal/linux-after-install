@@ -24,6 +24,9 @@ echo "################################################################"
 echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
+sudo apt-add-repository ppa:alexanderk23/ppa --yes
+sudo apt update
+sudo apt install gluqlo -y
 
 echo "################################################################"
 echo "###################    EMBY   ######################"

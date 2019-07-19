@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Settings;DesktopSettings;Security;X-XFCE;
+Comment[es_AR]=Change screensaver properties
+Comment=Change screensaver properties
+Exec=xscreensaver -no-splash
+GenericName[es_AR]=
+GenericName=
+Icon=xscreensaver
+MimeType=
+Name[es_AR]=Screensaver
+Name=Screensaver
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=xscreensaver

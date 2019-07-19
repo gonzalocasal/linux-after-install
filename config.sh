@@ -53,8 +53,6 @@ echo "################################################################"
 yes | cp Files/Config/kwinrc  ~/.config/
 yes | cp Files/Config/kglobalshortcutsrc  ~/.config/
 yes | cp Files/Config/khotkeysrc  ~/.config/
-
-echo "################################################################"
-echo "###################   CLEMENTINE   ######################"
-echo "################################################################"
+yes | cp Files/Config/xscreensaver  ~/.xscreensaver
+yes | cp Files/Config/autostart/xscreensaver-properties.desktop ~/.config/autostart/
 yes | cp Files/Config/Clementine.conf  ~/.config/Clementine/
