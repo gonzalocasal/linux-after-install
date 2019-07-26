@@ -56,3 +56,8 @@ yes | cp Files/Config/khotkeysrc  ~/.config/
 yes | cp Files/Config/xscreensaver  ~/.xscreensaver
 yes | cp Files/Config/autostart/xscreensaver-properties.desktop ~/.config/autostart/
 yes | cp Files/Config/Clementine.conf  ~/.config/Clementine/
+
+echo "################################################################"
+echo "###################  TOUCHPAD SETTINGS   ######################"
+echo "################################################################"
+sudo apt remove xserver-xorg-input-synaptics
