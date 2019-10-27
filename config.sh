@@ -45,7 +45,7 @@ echo "###################    SET AS WALLPAPER   ######################"
 echo "################################################################"
 mkdir ~/.local/share/kservices5
 mkdir ~/.local/share/kservices5/ServiceMenus
-cp -a Files/SetAsWallpaper.desktop ~/.local/share/kservices5/ServiceMenus/
+cp -a Files/Config/SetAsWallpaper.desktop ~/.local/share/kservices5/ServiceMenus/
 
 echo "################################################################"
 echo "###################   SETTINGS   ######################"

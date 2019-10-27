@@ -1,5 +1,5 @@
 [Data]
-DataCount=5
+DataCount=12
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -8,6 +8,84 @@ Enabled=true
 Name=KMenuEdit
 SystemGroup=1
 Type=ACTION_DATA_GROUP
+
+[Data_10]
+Comment=Comentario
+Enabled=true
+Name=preferencias
+Type=SIMPLE_ACTION_DATA
+
+[Data_10Actions]
+ActionsCount=1
+
+[Data_10Actions0]
+CommandURL=systemsettings5
+Type=COMMAND_URL
+
+[Data_10Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_10Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_10Triggers0]
+Key=Ctrl+Shift+P
+Type=SHORTCUT
+Uuid={0a7d2ced-076f-4f94-b7e9-4217deb0206f}
+
+[Data_11]
+Comment=Comentario
+Enabled=true
+Name=xKill
+Type=SIMPLE_ACTION_DATA
+
+[Data_11Actions]
+ActionsCount=1
+
+[Data_11Actions0]
+CommandURL=xkill
+Type=COMMAND_URL
+
+[Data_11Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_11Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_11Triggers0]
+Key=Ctrl+Alt+X
+Type=SHORTCUT
+Uuid={5c98d950-9376-47e8-bcb9-4b6cba2f7e63}
+
+[Data_12]
+Comment=Comentario
+Enabled=true
+Name=AirPlay
+Type=SIMPLE_ACTION_DATA
+
+[Data_12Actions]
+ActionsCount=1
+
+[Data_12Actions0]
+CommandURL=/bin/sh /home/gonzalo/.toggle.sh
+Type=COMMAND_URL
+
+[Data_12Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_12Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_12Triggers0]
+Key=Ctrl+Shift+A
+Type=SHORTCUT
+Uuid={390c6533-d916-4bb0-9159-295c912a8bfb}
 
 [Data_1Conditions]
 Comment=
@@ -1039,7 +1117,7 @@ Type=GESTURE
 
 [Data_5]
 Comment=should never see
-DataCount=8
+DataCount=4
 Enabled=true
 Name=should never see
 SystemGroup=2
@@ -1995,14 +2073,14 @@ Type=GESTURE
 [Data_5_4]
 Comment=Comentario
 Enabled=true
-Name=AirPlay
+Name=administrador de tareas
 Type=SIMPLE_ACTION_DATA
 
 [Data_5_4Actions]
 ActionsCount=1
 
 [Data_5_4Actions0]
-CommandURL=/bin/sh /home/gonzalo/.toggle.sh
+CommandURL=ksysguard
 Type=COMMAND_URL
 
 [Data_5_4Conditions]
@@ -2014,110 +2092,110 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5_4Triggers0]
-Key=Ctrl+Shift+A
-Type=SHORTCUT
-Uuid={390c6533-d916-4bb0-9159-295c912a8bfb}
-
-[Data_5_5]
-Comment=Comentario
-Enabled=true
-Name=xKill
-Type=SIMPLE_ACTION_DATA
-
-[Data_5_5Actions]
-ActionsCount=1
-
-[Data_5_5Actions0]
-CommandURL=xkill
-Type=COMMAND_URL
-
-[Data_5_5Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_5_5Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_5_5Triggers0]
-Key=Ctrl+Alt+X
-Type=SHORTCUT
-Uuid={5c98d950-9376-47e8-bcb9-4b6cba2f7e63}
-
-[Data_5_6]
-Comment=Comentario
-Enabled=true
-Name=administrador de tareas
-Type=SIMPLE_ACTION_DATA
-
-[Data_5_6Actions]
-ActionsCount=1
-
-[Data_5_6Actions0]
-CommandURL=ksysguard
-Type=COMMAND_URL
-
-[Data_5_6Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_5_6Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_5_6Triggers0]
 Key=Ctrl+Shift+Esc
 Type=SHORTCUT
 Uuid={23c114c3-2cdd-4caa-9e37-91dcbf2f6909}
 
-[Data_5_7]
+[Data_6]
 Comment=Comentario
 Enabled=true
-Name=preferencias
+Name=previous
 Type=SIMPLE_ACTION_DATA
 
-[Data_5_7Actions]
+[Data_6Actions]
 ActionsCount=1
 
-[Data_5_7Actions0]
-CommandURL=systemsettings5
+[Data_6Actions0]
+CommandURL=omnipause previous
 Type=COMMAND_URL
 
-[Data_5_7Conditions]
+[Data_6Conditions]
 Comment=
 ConditionsCount=0
 
-[Data_5_7Triggers]
+[Data_6Triggers]
 Comment=Simple_action
 TriggersCount=1
 
-[Data_5_7Triggers0]
-Key=Ctrl+Shift+P
+[Data_6Triggers0]
+Key=Ctrl+Shift+Left
 Type=SHORTCUT
-Uuid={0a7d2ced-076f-4f94-b7e9-4217deb0206f}
+Uuid={f4cba302-525b-4a2f-a4ad-ec8cc2d21d95}
 
-[Data_5_8]
+[Data_7]
+Comment=Comentario
+Enabled=true
+Name=play/pause
+Type=SIMPLE_ACTION_DATA
+
+[Data_7Actions]
+ActionsCount=1
+
+[Data_7Actions0]
+CommandURL=omnipause toggle
+Type=COMMAND_URL
+
+[Data_7Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_7Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_7Triggers0]
+Key=Ctrl+Shift+Space
+Type=SHORTCUT
+Uuid={249a64ea-a644-4ba4-a2ad-f9825c177438}
+
+[Data_8]
+Comment=Comentario
+Enabled=true
+Name=next
+Type=SIMPLE_ACTION_DATA
+
+[Data_8Actions]
+ActionsCount=1
+
+[Data_8Actions0]
+CommandURL=omnipause next
+Type=COMMAND_URL
+
+[Data_8Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_8Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_8Triggers0]
+Key=Ctrl+Shift+Right
+Type=SHORTCUT
+Uuid={9cba2d9f-7b97-4879-9f4b-8d2ba2b75afc}
+
+[Data_9]
 Comment=Comentario
 Enabled=true
 Name=screensaver
 Type=SIMPLE_ACTION_DATA
 
-[Data_5_8Actions]
+[Data_9Actions]
 ActionsCount=1
 
-[Data_5_8Actions0]
+[Data_9Actions0]
 CommandURL=xscreensaver-command -activate
 Type=COMMAND_URL
 
-[Data_5_8Conditions]
+[Data_9Conditions]
 Comment=
 ConditionsCount=0
 
-[Data_5_8Triggers]
+[Data_9Triggers]
 Comment=Simple_action
 TriggersCount=1
 
-[Data_5_8Triggers0]
+[Data_9Triggers0]
 Key=Ctrl+Alt+S
 Type=SHORTCUT
 Uuid={60cb5396-9abf-485b-aa26-b2f32452712c}
