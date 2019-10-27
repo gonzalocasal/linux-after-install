@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Forticlient SSL-VPN
+Comment=Forticlient SSL-VPN
+Icon=/home/gonzalo/Imágenes/Iconos/forticlient.png
+Exec=/opt/forticlient-sslvpn/forticlientsslvpn.sh
+Terminal=false
+Categories=Network;Application;
