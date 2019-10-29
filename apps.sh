@@ -270,7 +270,15 @@ mkdir ~/Programas
 mkdir ~/Programas/IntelliJ
 wget -O intellij.tar.gz https://download.jetbrains.com/idea/ideaIC-2019.1.3.tar.gz
 tar -zxf intellij.tar.gz -C ~/Programas/IntelliJ --strip-components 1
+rm intellij.tar.gz
 
+echo "################################################################"
+echo "###################   HIRI  ######################"
+echo "################################################################"
+mkdir ~/Programas/Hiri
+wget -O Hiri.tar.gz https://feedback.hiri.com/downloads/Hiri.tar.gz
+tar -zxf Hiri.tar.gz -C ~/Programas/Hiri --strip-components 1
+rm Hiri.tar.gz
 
 echo "################################################################"
 echo "###################    VIRTUAL BOX   ######################"

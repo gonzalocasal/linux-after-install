@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Hiri
+GenericName=Mail Client
+Comment=Hiri Email client
+Categories=Office;Network;Email;Calendar;
+Keywords=Email;E-mail;Calendar;Contacts;Terminal=false
+StartupNotify=true
+MimeType=x-scheme-handler/mailto;
+Exec="/home/gonzalo/Programas/hiri_1.4.0.5/hiri.sh" %u
+Icon=/home/gonzalo/Imágenes/Iconos/outlook2.png
