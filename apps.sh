@@ -21,6 +21,13 @@ sudo apt install -y samba kdenetwork-filesharing
 sleep 10
 
 echo "################################################################"
+echo "###################    EXFAT   ######################"
+echo "################################################################"
+sudo add-apt-repository --yes universe && 
+sudo apt update && 
+sudo apt install -y exfat-fuse exfat-utils
+
+echo "################################################################"
 echo "###################  SCREENSAVER  ######################"
 echo "################################################################"
 sudo apt -y install xscreensaver xscreensaver-gl-extra xscreensaver-data-extra
