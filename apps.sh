@@ -141,6 +141,13 @@ sudo apt install -y paprefs pulseaudio-module-raop
 sleep 10
 
 echo "################################################################"
+echo "###################  APTX   ######################"
+echo "################################################################"
+sudo add-apt-repository --yes ppa:eh5/pulseaudio-a2dp
+sudo apt-get update
+sudo apt install -y libavcodec58 libldac pulseaudio-modules-bt
+
+echo "################################################################"
 echo "###################   PUDDLE TAG   ######################"
 echo "################################################################"
 sudo apt install -y puddletag
